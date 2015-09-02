@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="UnitStatusFrame" name="MinionStatus">
+        <Height val="100"/>
+        <Width val="100"/>
+        <Frame type="Frame" name="AttachPointFrame">
+            <Anchor relative="$parent"/>
+        </Frame>
+
+        <Frame type="UnitStatusHealthBar" name="HealthBar">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="10"/>
+            <Anchor side="Left" relative="$parent/AttachPointFrame" pos="Min" offset="-35"/>
+            <Height val="13"/>
+            <Width val="80"/>
+            <Texture val="@UI/HealthBar"/>
+            <OwnerColor val="0,200,0" index="0"/>
+            <AllyColor val="0,200,0" index="0"/>
+            <EnemyColor val="150,15,50" index="0"/>
+            <ReductionColor val="255,0,0" index="0"/>
+            <ReductionShown val="true" index="0"/>
+            <IncreaseDuration val="0" index="0"/>
+            <DecreaseDuration val="1000" index="0"/>
+            <BarInsetRect top="2" left="2" bottom="2" right="2"/>
+            <BackgroundInsetRect top="1" left="1" bottom="1" right="1"/>
+            <BackgroundShown val="true"/>
+            <BackgroundColor val="0,0,0"/>
+        </Frame>
+
+        <Frame type="UnitStatusEnergyBar" name="EnergyBar" template="HotS_UnitStatus/UnitStatusSegmentedEnergyTemplate">
+            <Anchor side="Top" relative="$parent/HealthBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/HealthBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <SegmentValue val="25" index="0"/>
+            <Width val="80"/>
+            <Height val="12"/>
+        </Frame>
+
+        <Frame type="UnitStatusProgressBar" name="ProgressBar" template="HotS_UnitStatus/UnitStatusProgressBarTemplate">
+            <Anchor side="Top" relative="$parent/EnergyBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/EnergyBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <Width val="80"/>
+            <Height val="12"/>
+        </Frame>
+
+        <Frame type="UnitStatusDurationBar" name="DurationBar" template="HotS_UnitStatus/UnitStatusDurationBarTemplate">
+            <Anchor side="Top" relative="$parent/ProgressBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/ProgressBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <Width val="80"/>
+            <Height val="12"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="UnitStatusFrame" name="DisguiseMinionStatus" template="CustomMinionStatusBar/MinionStatus">
+
+        <Frame type="UnitStatusHealthBar" name="HealthBar">
+            <EnemyColor val="0,200,0" index="0"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="UnitStatusFrame" name="TurretStatus" template="CustomMinionStatusBar/MinionStatus">
+
+        <Frame type="UnitStatusHealthBar" name="HealthBar">
+            <Anchor side="Left" relative="$parent/AttachPointFrame" pos="Min" offset="-90"/>
+            <Height val="20"/>
+            <Width val="180"/>
+            <BackgroundColor val="50,50,50"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="UnitStatusFrame" name="PylonStatus">
+        <Height val="100"/>
+        <Width val="100"/>
+        <Frame type="Frame" name="AttachPointFrame">
+            <Anchor relative="$parent"/>
+        </Frame>
+
+        <Frame type="UnitStatusHealthBar" name="HealthBar">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="75"/>
+            <Anchor side="Left" relative="$parent/AttachPointFrame" pos="Min" offset="-50"/>
+            <Height val="20"/>
+            <Width val="100"/>
+            <Texture val="@UI/HotS_HeroUnit_Status_Bar"/>
+            <BarInsetRect top="4" left="4" bottom="4" right="4"/>
+            <BackgroundInsetRect top="1" left="2" bottom="1" right="2"/>
+            <BackgroundShown val="true"/>
+            <BackgroundColor val="0,0,0"/>
+            <OwnerColor val="0,255,0" index="0"/>
+            <AllyColor val="11,105,1" index="0"/>
+            <EnemyColor val="150,15,50" index="0"/>
+            <ReductionColor val="255,0,0" index="0"/>
+            <Segmented val="true" index="0"/>
+            <ReductionShown val="true" index="0"/>
+            <SegmentValue val="1" index="0"/>
+            <IncreaseDuration val="0" index="0"/>
+            <DecreaseDuration val="1000" index="0"/>
+        </Frame>
+    </Frame>
+</Desc>

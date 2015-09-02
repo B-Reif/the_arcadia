@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Preload>
+<Asset path="EditorData\Images\BrushShapeCircle.tga" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-zerg-larva.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-bombardmentstrike-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-terran-nova.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-upgrade-zerg-swarmfrenzy.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-zerg-corruption-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\ui_waypointmove_ringlmp.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-zerg-creepspread.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-zerg-ultralisk-torrasque.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-domination.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-huntermissile-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\ui_waypointmove_ringlmp.lvl0" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-protoss-chronoboost.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-neutral-ursadonleap.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-protoss-preordain.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-protoss-stalker.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-zerg-banelingspooge.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-building-zerg-nydusworm.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-protoss-oraclepulsarcannonon.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-zerg-primalroach.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-terran-hellionmercenary.dds" Type="Image"/>
+<Asset path="EditorData\Images\BrushShapeSquare.tga" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-snipe.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-kerrigan-psychicshift.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-protoss-forcefield-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-tips-terran-energynova.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-electricfield.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-protoss-feedback-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-kerrigan-abilityefficiency.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-upgrade-zerg-explosiveglaive.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-protoss-archon.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-spidermine.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-emp-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-zerg-siphon.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-terran-marauder.dds" Type="Image"/>
+<Asset path="Assets\Textures\ui_hots_icon_kerrigan_kitcheckmark_blue.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-research-zerg-perditionturret.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-zerg-stukov.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-emergencythrusters.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-protoss-psistorm-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\ui_battlenet_glue_frame_small_base.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-unstablepayload.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-upgrade-terran-infernalpreigniter.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-protoss-purify.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-zerg-primalzergling.dds" Type="Image"/>
+<Asset path="Assets\Textures\ui_battlenet_glues_dialogbox_base.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-protoss-zealot.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-zerg-burrow-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-techupgrade-terran-devastatormissiles.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-raynortossgrenade.dds" Type="Image"/>
+<Asset path="Assets\Textures\ui_battlenet_challenge_frame_sub.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-zerg-disguise.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-setrallypoint.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-protoss-hightemplar.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-techupgrade-terran-twin-linkedflamethrower.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-terran-redlinereactor.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-ability-protoss-permanentlycloaked-darktemplar-color.dds" Type="Image"/>
+<Asset path="Assets\Textures\btn-unit-protoss-darktemplar.dds" Type="Image"/>
+<Actor id="Waterfall"/>
+<Actor id="StarshipHoldingPenLarge" Variations="0"/>
+<Actor id="SJAsteroidsSky" Variations="3"/>
+<Actor id="ProtossWarpInPadFlat"/>
+<Actor id="PandaItems"/>
+<Actor id="StarshipIceWorldFlora" Variations="0,1,2"/>
+<Actor id="ShipDisplays" Variations="0,1,2,3,5"/>
+<Actor id="ProtossSanctum"/>
+<Actor id="ShipMiscParts" Variations="0,1"/>
+<Actor id="ProtossReliquary"/>
+<Actor id="SYSTEM_ActorConfig"/>
+<Actor id="StarshipEngine"/>
+<Actor id="StarshipCurtain2" Variations="0,1"/>
+<Actor id="ProtossCratesDoodad" Variations="0,1,2,3,4,5,6"/>
+<Actor id="AiurProtossBuildingsSmall" Variations="2,3,4"/>
+<Actor id="StarshipWingPiece" Variations="0,1"/>
+<Actor id="StarshipWallLights" Variations="0,2"/>
+<Actor id="StarshipArch" Variations="0,1"/>
+<Actor id="StarshipVentdoor" Variations="0"/>
+<Actor id="StarshipVent" Variations="0,1,2,3"/>
+<Actor id="StarshipHoldingPen"/>
+<Actor id="StarshipHallTrim" Variations="0,1"/>
+<Actor id="FogGrey"/>
+<Actor id="StarshipCockpit" Variations="0,2,3,4,7,8,10"/>
+<Actor id="AiurProtossBuildings" Variations="1"/>
+<Actor id="StarshipOuterHullPlates" Variations="0,1,2"/>
+<Actor id="StarshipProtossWallpost" Variations="0"/>
+<Actor id="ZerusGroundVines" Variations="2"/>
+<Actor id="StarshipIceWorldIceSamples" Variations="0"/>
+<Actor id="ProtossTarmacSplat"/>
+<Actor id="StarshipContainers" Variations="0,1,2"/>
+<Actor id="DecalSpace" Variations="2"/>
+<Actor id="StarshipIceWorldFauna" Variations="0"/>
+<Actor id="DecalProtoss" Variations="1,4"/>
+<Behavior id="TopLaner"/>
+<Behavior id="VisionTowerCaptured"/>
+<Behavior id="AddPowerPoints"/>
+<Behavior id="DeathTag"/>
+<Behavior id="BotLaner"/>
+<Behavior id="DebugDisable"/>
+<Effect id="WildfireDamage"/>
+<Effect id="RevengeEnergyBurnDamage"/>
+<Effect id="TurretDamage"/>
+<Effect id="KillsToCaster"/>
+<Effect id="PurgeBonusDamage"/>
+<Light id="Starship"/>
+<Light id="StarshipDark"/>
+<Sound id="UI_ArcadeSelect"/>
+<Sound id="UI_BnetCountdown"/>
+<Sound id="Alert_UniObjectiveCompleted"/>
+<Sound id="Terran_BuildingPlacement"/>
+<Sound id="PointsGain"/>
+<Terrain id="Starship"/>
+<Unit id="ZealotMinion"/>
+<Unit id="Herod"/>
+<Unit id="Melchior"/>
+<Unit id="KaineSELECTPREVIEW"/>
+<Unit id="DireUrsadon"/>
+<Unit id="Brooke"/>
+<Unit id="SilasSELECTPREVIEW"/>
+<Unit id="Roach2"/>
+<Unit id="DamaskSELECTPREVIEW"/>
+<Unit id="Quillgor"/>
+<Unit id="FenixSELECTPREVIEW"/>
+<Unit id="TheTorrasqueSELECTPREVIEW"/>
+<Unit id="TheTorrasque"/>
+<Unit id="JordanSELECTPREVIEW"/>
+<Unit id="ImmortalMinion"/>
+<Unit id="Kaine"/>
+<Unit id="BrookeSELECTPREVIEW"/>
+<Unit id="Ananias"/>
+<Unit id="Terrorzor2"/>
+<Unit id="Herod2"/>
+<Unit id="AnaniasSELECTPREVIEW"/>
+<Unit id="VisionTower"/>
+<Unit id="Turret"/>
+<Unit id="PsiInhibitor"/>
+<Unit id="StalkerMinion"/>
+<Unit id="PsiLinkNexus"/>
+<Unit id="Mitoscarab"/>
+<Unit id="Damask"/>
+<Unit id="TurretDebris"/>
+<Unit id="DireMitoscarab"/>
+<Unit id="DireQuillgor"/>
+<Unit id="SpyHero"/>
+<Unit id="NilesSELECTPREVIEW"/>
+<Unit id="Niles"/>
+<Unit id="InvisiblePylon"/>
+<Unit id="MelchiorSELECTPREVIEW"/>
+<Unit id="Bengura"/>
+<Unit id="Ursadon"/>
+<Unit id="Sheep"/>
+<Unit id="Fenix"/>
+<Unit id="BenguraSELECTPREVIEW"/>
+<Unit id="CarrionBird"/>
+<Unit id="Anteplott"/>
+<Unit id="HeroRocketeer"/>
+<Unit id="Artosilope"/>
+</Preload>

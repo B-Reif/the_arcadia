@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="UnitStatusFrame" name="HeroStatus">
+        <Height val="130"/>
+        <Width val="210"/>
+        <OwnerRenderPriority val="812"/>
+        <AllyRenderPriority val="712"/>
+        <EnemyRenderPriority val="612"/>
+        <Frame type="Frame" name="AttachPointFrame">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="70"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="100"/>
+            <Height val="0"/>
+            <Width val="0"/>
+        </Frame>
+
+        <Frame type="Image" name="KerriganBackgroundImage">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="50"/>
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+            <Height val="45"/>
+            <Width val="135"/>
+            <Texture val="Assets\Textures\ui_ingame_hotscampaign_kerriganframe_terr.dds"/>
+            <RenderPriority val="500"/>
+            <RenderType val="HDR"/>
+        </Frame>
+
+        <Frame type="UnitStatusUnitName" name="UnitNameLabel" template="HotS_UnitStatus/KerriganUnitStatusUnitNameTemplate">
+            <Anchor side="Top" relative="$parent/KerriganBackgroundImage" pos="Min" offset="-15"/>
+            <Anchor side="Left" relative="$parent/KerriganBackgroundImage" pos="Mid" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+        </Frame>
+
+        <Frame type="UnitStatusShieldedHealthBar" name="ShieldedHealthBar">
+            <Anchor side="Top" relative="$parent/KerriganBackgroundImage" pos="Min" offset="11"/>
+            <Anchor side="Left" relative="$parent/KerriganBackgroundImage" pos="Min" offset="13"/>
+            <Height val="21"/>
+            <Width val="110"/>
+            <Texture val="@UI/HotS_HeroUnit_Status_Bar"/>
+            <BackgroundShown val="true"/>
+            <BackgroundColor val="0,0,0"/>
+            <BarInsetRect top="2" left="2" bottom="2" right="2"/>
+            <BackgroundInsetRect top="1" left="1" bottom="1" right="1"/>
+            <VisibleToAlly val="true"/>
+            <VisibleToOwner val="true"/>
+            <VisibleToEnemy val="true"/>
+            <BarCount val="2"/>
+            <OwnerColor val="30,255,30" index="0"/>
+            <AllyColor val="102,141,255" index="0"/>
+            <EnemyColor val="150,15,50" index="0"/>
+            <ReductionColor val="255,0,0" index="0"/>
+            <Segmented val="true" index="0"/>
+            <ReductionShown val="true" index="0"/>
+            <ApplyToTotal val="true" index="0"/>
+            <SegmentValue val="100" index="0"/>
+            <MaxSegmentCount val="9999" index="0"/>
+            <IncreaseDuration val="3000" index="0"/>
+            <DecreaseDuration val="3000" index="0"/>
+            <OwnerColor val="235,235,235" index="1"/>
+            <AllyColor val="235,235,235" index="1"/>
+            <EnemyColor val="235,235,235" index="1"/>
+            <ReductionColor val="255,0,0" index="1"/>
+            <Segmented val="true" index="1"/>
+            <ReductionShown val="true" index="1"/>
+            <ApplyToTotal val="true" index="1"/>
+            <SegmentValue val="100" index="1"/>
+            <MaxSegmentCount val="9999" index="1"/>
+            <IncreaseDuration val="0" index="1"/>
+            <DecreaseDuration val="3000" index="1"/>
+        </Frame>
+
+        <Frame type="UnitStatusEnergyBar" name="EnergyBar" template="HotS_UnitStatus/UnitStatusSegmentedEnergyTemplate">
+            <Anchor side="Top" relative="$parent/ShieldedHealthBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/ShieldedHealthBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <SegmentValue val="25" index="0"/>
+            <Width val="110"/>
+            <Height val="15"/>
+        </Frame>
+
+        <Frame type="UnitStatusProgressBar" name="ProgressBar" template="HotS_UnitStatus/UnitStatusProgressBarTemplate">
+            <Anchor side="Top" relative="$parent/EnergyBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/EnergyBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <Width val="110"/>
+            <Height val="12"/>
+        </Frame>
+
+        <Frame type="UnitStatusDurationBar" name="DurationBar" template="HotS_UnitStatus/UnitStatusDurationBarTemplate">
+            <Anchor side="Top" relative="$parent/ProgressBar" pos="Max" offset="-1"/>
+            <Anchor side="Left" relative="$parent/ProgressBar" pos="Min" offset="0"/>
+            <CollapseLayout val="true"/>
+            <Width val="110"/>
+            <Height val="12"/>
+        </Frame>
+    </Frame>
+</Desc>

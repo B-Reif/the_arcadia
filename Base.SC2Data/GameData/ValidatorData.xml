@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CValidatorUnitCompareBehaviorCount id="Aftershock1">
+        <Value value="1"/>
+        <Behavior value="Aftershock"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="Aftershock12">
+        <Value value="2"/>
+        <Behavior value="Aftershock"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="Aftershock13">
+        <Value value="3"/>
+        <Behavior value="Aftershock"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="Aftershock14">
+        <Value value="4"/>
+        <Behavior value="Aftershock"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="Aftershock15">
+        <Value value="5"/>
+        <Behavior value="Aftershock"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="AlliedHeroNearby">
+        <AreaArray Radius="1.5" Validator="NotFullLife"/>
+        <LaunchLocation Effect="LightAspectTeleport" Value="TargetPoint"/>
+        <SearchFilters value="Heroic;Self,Player,Neutral,Enemy,Stasis,Dead"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="CanGetRhythmBuff">
+        <Type value="And"/>
+        <CombineArray value="NoRhythmBuff"/>
+        <CombineArray value="RhythmAvailableBuff"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="CasterHas5WildPower">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="5"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasSymbiosisBuff">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="SymbiosisCaster"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="ChronoshieldTargetIsHeroic">
+        <WhichUnit Effect="ChronoshieldApply"/>
+        <Filters value="Heroic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorLocationCompareCliffLevel id="CliffLevelEqualOrLower">
+        <ResultFailed value="Error,CliffText"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <OtherLocation Value="CasterPoint"/>
+        <Compare value="LE"/>
+    </CValidatorLocationCompareCliffLevel>
+    <CValidatorLocationCompareCliffLevel id="CliffLevelNot0">
+        <Compare value="NE"/>
+    </CValidatorLocationCompareCliffLevel>
+    <CValidatorCombine id="HasUnderfootValiOrHasShields">
+        <CombineArray value="HasShieldsCaster"/>
+        <CombineArray value="HasUnderfootValidatorBehavior"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="NoChronoshieldEnergyCD">
+        <Behavior value="ChronoshieldEnergyGainCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NoResetCooldown">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="HookedTongueRecastCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasUnderfootValidatorBehavior">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="UnderfootValidatorDelay"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NoResetCooldown2">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="HookedTongueRecastCooldown2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NoUnderfootCooldown">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="UnderfootCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NoUnderfootShield">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="UnderfootShield"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationPathable id="NotPathable">
+        <ResultFailed value="MustTargetWalkableLocation"/>
+        <Find value="0"/>
+        <Types index="Building" value="0"/>
+    </CValidatorLocationPathable>
+    <CValidatorUnitCompareBehaviorCount id="PersonalWarpNotCanceled2">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="PersonalWarpRunning2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationPathable id="SourceLocationIsPathable">
+        <ResultFailed value="MustTargetWalkableLocation"/>
+        <WhichLocation Value="SourcePoint"/>
+        <Types index="Building" value="0"/>
+    </CValidatorLocationPathable>
+    <CValidatorUnitCompareBehaviorCount id="SymbiosisTargetDisguisedSpy">
+        <Compare value="GT"/>
+        <Behavior value="DisguiseReplica"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="SymbiosisTargetIsHeroOrReplica">
+        <CombineArray value="IsHeroic"/>
+        <CombineArray value="SymbiosisTargetDisguisedSpy"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotBeingSkipped2">
+        <Behavior value="SnipeSkipBehavior2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TradeWindsDamageAvailable">
+        <Behavior value="TradeWindsDamageCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasFrostbiteAttack">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="FrostbiteAttack"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="IsWardenPylon">
+        <Value value="Pylon2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="NoControllerBehavior">
+        <Behavior value="CleaveBehaviorController"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareChargeUsed id="InvisibilityChargesMoreThan2">
+        <OtherUnit Value="Unknown"/>
+        <ResultNoUnit value="MustTargetUnit"/>
+        <Compare value="LT"/>
+        <ChargeLink value="Abil/Invisibility"/>
+        <Location value="Player"/>
+        <Ability value="Invisibility"/>
+        <Value value="98"/>
+    </CValidatorUnitCompareChargeUsed>
+    <CValidatorUnitCompareChargeUsed id="CloakChargesCast">
+        <Compare value="LE"/>
+        <ChargeLink value="Abil/SpyCloak"/>
+        <Ability value="Cloak"/>
+        <Value value="85"/>
+    </CValidatorUnitCompareChargeUsed>
+    <CValidatorCombine id="CloakedOrCloakDisrupted">
+        <CombineArray value="HasCloak"/>
+        <CombineArray value="HasCloakFadingIn"/>
+        <CombineArray value="HasCloakSuppressedDamage"/>
+        <CombineArray value="HasCloakSuppressedProximity"/>
+    </CValidatorCombine>
+    <CValidatorUnitFilters id="DisguiseTargetIsAlliedHero">
+        <ResultNoUnit value="MustTargetUnit,DisguiseError"/>
+        <Filters value="Heroic;Self,Neutral,Enemy,Missile,Stasis,Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="DisguiseTargetIsMinion">
+        <ResultNoUnit value="MustTargetUnit,DisguiseError"/>
+        <Filters value="Light;Self,Biological,Heroic,Stasis"/>
+    </CValidatorUnitFilters>
+    <CValidatorCombine id="DisguiseTargetValid">
+        <ResultFailed value="Error,DisguiseError"/>
+        <CombineArray value="DisguiseTargetIsAlliedHero"/>
+        <CombineArray value="DisguiseTargetIsMinion"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="HasAdrenalAcid">
+        <Compare value="GT"/>
+        <Behavior value="AdrenalAcid"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasCloak">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Invisibility"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasCloakFadingIn">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="InvisibilityFadeIn"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasCloakSuppressedDamage">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="InvisibilitySuppressionDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasCloakSuppressedProximity">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="InvisibilitySuppressionProximity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MonsterNotAroused">
+        <Behavior value="MonsterAroused"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MonsterNotAttacking">
+        <WhichUnit Effect="MonsterArousalSet"/>
+        <Value value="1"/>
+        <Behavior value="MonsterOutOfCombat"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="MonsterNotDamagedNotAttacking">
+        <Type value="And"/>
+        <CombineArray value="NotAttacking"/>
+        <CombineArray value="MonsterNotAroused"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="HasPersonalWarpAttack">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="PersonalWarpAttack"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="PivotAvailable">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="PivotCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="IsNydusWorm">
+        <Value value="NydusCanal2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="LungeNoDamageCooldown">
+        <Behavior value="LungeDamageCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MomentumController1Off">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MomentumController"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareSpeed id="NotMaintainedMovement">
+        <WhichUnit Value="Source"/>
+        <Compare value="LT"/>
+        <Value value="2"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorUnitCompareBehaviorCount id="RadarMineArmTime">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="RadarMineArmTime"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="RepeaterLanceDamageAvailable">
+        <Type value="And"/>
+        <CombineArray value="RepeaterLanceDamageInboundAvailable"/>
+        <CombineArray value="RepeaterLanceDamageOutboundAvailable"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="RepeaterLanceDamageInboundAvailable">
+        <Behavior value="RepeaterLanceDamageCooldownInbound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RepeaterLanceWPInboundAvailable">
+        <Behavior value="RepeaterLanceWPCooldownInbound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RepeaterLanceDamageOutboundAvailable">
+        <Behavior value="RepeaterLanceDamageCooldownOutbound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RepeaterLanceWPOutboundAvailable">
+        <Behavior value="RepeaterLanceWPCooldownOutbound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RepeaterLanceGoingInbound">
+        <WhichUnit Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="RepeaterLanceGoingInbound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="NoRhythmBuff">
+        <Type value="And"/>
+        <CombineArray value="RhythmBomb"/>
+        <CombineArray value="RhythmDart"/>
+        <CombineArray value="RhythmSnipe"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="CasterDistantFromEnemies">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <AreaArray Radius="100" Validator="TargetHasVisionOfCaster"/>
+        <Compare value="LE"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitFilters id="CasterCloaked">
+        <WhichUnit Value="Caster"/>
+        <Filters value="Cloaked;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasHeightStacks">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TakeoffHeightStacks"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ElectricRazorDamageOutboundAvailable">
+        <Behavior value="ElectricRazorDamageCooldownOutbound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="CasterIsMissile">
+        <WhichUnit Value="Caster"/>
+        <Filters value="Missile;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsNotResetting">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="AgainResetBehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsInTakeoff">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="TakeoffControllerBehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="CasterUnseenorDistant">
+        <CombineArray value="IsCloakedandNotDetected"/>
+        <CombineArray value="CasterDistantFromEnemies"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="CorruptNoFoundBehavior">
+        <Behavior value="DeflectFoundBehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ElectricRazorDamageInboundAvailable">
+        <Behavior value="ElectricRazorDamageCooldownInbound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ElectricRazorGoingInbound">
+        <WhichUnit Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="ElectricRazorGoingInbound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="IsCloakedandNotDetected">
+        <Type value="And"/>
+        <CombineArray value="CasterCloaked"/>
+        <CombineArray value="CasterNotDetected"/>
+    </CValidatorCombine>
+    <CValidatorUnitDetected id="CasterNotDetected">
+        <WhichUnit Value="Caster"/>
+        <Flags index="Normal" value="1"/>
+    </CValidatorUnitDetected>
+    <CValidatorCombine id="IsCloakedandStill">
+        <Type value="And"/>
+        <CombineArray value="UnitHasSpyCloak"/>
+        <CombineArray value="NotMoving"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="IsCloakedandMoving">
+        <Type value="And"/>
+        <CombineArray value="UnitHasSpyCloak"/>
+        <CombineArray value="IsMoving"/>
+    </CValidatorCombine>
+    <CValidatorPlayerAlliance id="IsEnemy">
+        <Find value="1"/>
+    </CValidatorPlayerAlliance>
+    <CValidatorLocationComparePower id="IsPowered">
+        <PowerSource value="PylonPowerSource"/>
+        <Value value="1"/>
+    </CValidatorLocationComparePower>
+    <CValidatorUnitCompareBehaviorCount id="LongshockOn">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="Longshock"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="PersonalWarpNotCanceled">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="PersonalWarpRunning"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="RadarMinesNotNearby">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <AreaArray Radius="2" Validator="UnitisRadarMine"/>
+        <Compare value="Eq"/>
+        <LaunchLocation Value="CasterUnitOrPoint"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy,Dead"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareSpeed id="MaintainedMovement">
+        <WhichUnit Value="Source"/>
+        <Compare value="GE"/>
+        <Value value="2"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorUnitFilters id="RepeaterLanceOutboundTargetIsHeroic">
+        <WhichUnit Effect="RepeaterLanceMiddleCollisionSetOutbound"/>
+        <Filters value="Heroic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="RhythmAvailableBuff">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="Rhythm"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RhythmBomb">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="RhythmBomb"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RhythmSnipe">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="RhythmSnipe"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="RhythmDart">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="RhythmDart"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="SummonLarvaNoCooldown">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SummonLarvaCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="SummonLarvaNoCooldown2">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="SummonLarvaControllerBehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareCliffLevel id="TargetCliffLevel">
+        <WhichLocation Value="CasterPoint"/>
+        <OtherLocation Effect="SnipeLaunchMissileSwitch" Value="TargetPoint"/>
+        <Compare value="LT"/>
+    </CValidatorLocationCompareCliffLevel>
+    <CValidatorLocationVision id="TargetHasVisionOfCaster">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <WhichPlayer Value="Target"/>
+    </CValidatorLocationVision>
+    <CValidatorUnitCompareSpeed id="IsMoving">
+        <Compare value="GT"/>
+        <WhichUnit Value="Caster"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsBeingFirefisted">
+        <Value value="1"/>
+        <Behavior value="Firefisted"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsDrenched">
+        <Compare value="GT"/>
+        <Behavior value="OilPuddleDrenched"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="CasterisFenix">
+        <Value value="Fenix"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsBeingPulledByCalledShot">
+        <Value value="1"/>
+        <Behavior value="CalledShotHeightandStun"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="PivotPointOfOrigin">
+        <Value value="PivotPointOfOrigin"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFilters id="DisguiseTargetIsEnemy">
+        <WhichUnit Effect="DisguiseUniversalSet"/>
+        <Filters value="-;Player,Ally,Neutral"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitType id="TargetIsFrostShard">
+        <ResultFailed value="Error,Abil/IcebreakerError"/>
+        <Value value="FrostShard"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFilters id="TargetIsLight">
+        <Filters value="Light;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotBeingSkipped">
+        <Behavior value="SnipeSkipBehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TargetIsOilPuddle">
+        <Value value="OilPuddle"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsTargetedByCalledShot">
+        <Value value="1"/>
+        <Behavior value="CalledShotTargeted"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="DamageTargetNotBeingSkippedCopy">
+        <WhichUnit Effect="SnipeDamage22"/>
+        <Behavior value="SnipeSkipBehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotFoundbyCalledShot">
+        <Behavior value="CalledShotFound"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="UnitHasBlueFlame">
+        <CombineArray value="UnitHasNoBlueFlame2"/>
+        <CombineArray value="UnitHasNoBlueFlame22"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TorrasqueUsingCalledShot">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="CalledShotAttackBehavior"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="UnitCanBeCloakSuppressed">
+        <CombineArray value="UnitHasSpyCloak"/>
+        <CombineArray value="UnitSpyCloakSuppressed"/>
+        <CombineArray value="UnitSpyCloakFadeIn"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="UnitHasNoBlueFlame">
+        <Type value="And"/>
+        <CombineArray value="UnitHasNoBlueFlame2222"/>
+        <CombineArray value="UnitHasNoBlueFlame222"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="AttackerHasDarkAspect">
+        <WhichUnit Value="Origin"/>
+        <Value value="1"/>
+        <Behavior value="DarkAspect"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasFluxclaws">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="Fluxclaws"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasNoBlueFlame2">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="BlueFlame"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasNoBlueFlame22">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="Maim"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasNoBlueFlame222">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Maim"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasNoBlueFlame2222">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="BlueFlame"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasNoSpyCloak2">
+        <WhichUnit Value="Source"/>
+        <Behavior value="Invisibility"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitNotDisguised">
+        <WhichUnit Value="Source"/>
+        <Behavior value="DisguisedSpy"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasPylonBuff">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="PylonTimeScaleBuff"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasDarkAspect">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="DarkAspect"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasLightAspect">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="LightAspect"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasReseek">
+        <WhichUnit Effect="SeekerBeamImpactSet" Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="SeekerReseeking"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasSpyCloak">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="Invisibility"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasMaim">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="Maim"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasAmbush">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="Ambush"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="UnitHasMaimAndAmbush">
+        <Type value="And"/>
+        <CombineArray value="UnitHasMaim"/>
+        <CombineArray value="UnitHasAmbush"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasNoSpyCloak">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Invisibility"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="UnitIsHeroWarden">
+        <Value value="Ananias"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="UnitIsSpy">
+        <WhichUnit Value="Source"/>
+        <Value value="SpyHero"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="UnitSpyCloakSuppressed">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="InvisibilitySuppressionDamage"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitSpyCloakFadeIn">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="InvisibilityFadeIn"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="UnitisRadarMine">
+        <CombineArray value="UnitisBurrowedRadarMine"/>
+        <CombineArray value="UnitisUnburrowedRadarMine"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="UnitisUnburrowedRadarMine">
+        <Value value="RadarMine"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="UnitisBurrowedRadarMine">
+        <Value value="RadarMineBurrowed"/>
+    </CValidatorUnitType>
+    <CValidatorLocationComparePower id="UnknownValidator">
+        <WhichLocation Value="SourceUnitOrPoint"/>
+        <PowerSource value="PylonPowerSource"/>
+        <Value value="1"/>
+    </CValidatorLocationComparePower>
+    <CValidatorUnitCompareBehaviorCount id="UnknownValidator2"/>
+    <CValidatorUnitCompareVital id="HasShieldsCaster">
+        <ResultFailed value="NotEnoughShields"/>
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="WildPower0">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower9">
+        <WhichUnit Value="Caster"/>
+        <Value value="9"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower10">
+        <WhichUnit Value="Caster"/>
+        <Value value="10"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower1">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower2">
+        <WhichUnit Value="Caster"/>
+        <Value value="2"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower3">
+        <WhichUnit Value="Caster"/>
+        <Value value="3"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower4">
+        <WhichUnit Value="Caster"/>
+        <Value value="4"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower5">
+        <WhichUnit Value="Caster"/>
+        <Value value="5"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower6">
+        <WhichUnit Value="Caster"/>
+        <Value value="6"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower7">
+        <WhichUnit Value="Caster"/>
+        <Value value="7"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WildPower8">
+        <WhichUnit Value="Caster"/>
+        <Value value="8"/>
+        <Behavior value="WildPower"/>
+    </CValidatorUnitCompareBehaviorCount>
+</Catalog>

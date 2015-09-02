@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CSound id="AgainLaunchSound" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\UltraLisk_Attack0.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\UltraLisk_Attack1.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\UltraLisk_Attack3.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\UltraLisk_Attack4.ogg"/>
+        <DupeDestroyCount value="3"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="WildfireAmbientElectricity" parent="Ambience_Object">
+        <EditorCategories value="Race:Neutral"/>
+        <AssetArray File="Assets\Sounds\Zerus_ElectricSurge_1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerus_ElectricSurge_2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerus_ElectricSurge_3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerus_ElectricSurge_4.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerus_ElectricSurge_5.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerus_ElectricSurge_6.wav" FacialGroup=""/>
+        <DupeDestroyCount value="3"/>
+        <Pitch value="0.000000,4.000000"/>
+        <Volume value="-25.000000,-20.000000"/>
+        <VolumeRolloffPoints Distance="25.000000"/>
+        <VolumeRolloffPoints Distance="50.000000" Volume="-96.000000"/>
+    </CSound>
+    <CSound id="Corruptor_AttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Corruptor\Corruptor_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Corruptor\Corruptor_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Corruptor\Corruptor_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Corruptor\Corruptor_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Corruptor\Corruptor_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Corruptor\Corruptor_AttackLaunch5.wav"/>
+        <DupeDestroyCount value="6"/>
+        <Volume value="-47.290001,-45.730000"/>
+    </CSound>
+    <CSound id="Fenix_Yes" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Yes00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Yes01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Yes02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Yes03.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Fenix_Yes_DA" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Yes00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Yes01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Yes02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Yes03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Yes04.ogg"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Fenix_Attack" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Attack00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Attack01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Attack02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Attack03.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Fenix_Help" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Help00.ogg"/>
+        <Category value="Alert"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Fenix_Ready" parent="Ready">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Ready00.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Fenix_What" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_What00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_What01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_What02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_What03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_What04.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Fenix_Pissed" parent="Pissed">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Pissed00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Pissed01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Pissed02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Pissed03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Karass\Karass_Pissed04.ogg"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="Fenix_Pissed_DA" parent="Pissed">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Pissed00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Pissed01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Pissed02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Pissed03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Pissed04.ogg"/>
+    </CSound>
+    <CSound id="Fenix_Attack_DA" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Attack00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Attack01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Attack02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Attack03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Attack04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Attack05.ogg"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Fenix_Help_DA" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Help00.ogg"/>
+        <Category value="Alert"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Fenix_What_DA" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_What00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_What01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_What02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_What03.ogg"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Fenix_Ready_DA" parent="Ready">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Urun\Urun_Ready00.ogg"/>
+    </CSound>
+    <CSound id="HookedTonguesImpact2" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Spell_Yoink_Impact_01.wav" FacialGroup=""/>
+        <Pitch value="-2.000000,1.000000"/>
+        <Volume value="-9.000000,-9.000000"/>
+    </CSound>
+    <CSound id="PointsGain" parent="Spell">
+        <EditorCategories value="Race:Neutral"/>
+        <AssetArray File="Assets\Sounds\Uni\Units\LostViking\LostViking_Powerup.wav" Pitch="-10.000000,10.000000"/>
+        <DupeMuteCount value="3"/>
+    </CSound>
+    <CSound id="Rhythm2" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Obelisk\Obelisk_ArgusLinkImpact0.wav" FacialGroup=""/>
+        <DupeHistoryCount value="1"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="-12.660000,-11.660000"/>
+        <Volume value="-7.000000,-7.000000"/>
+    </CSound>
+    <CSound id="VileBurstImpact" parent="Ambience_Object">
+        <EditorCategories value="Race:Neutral"/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_06.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_07.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_08.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_AcidBurst_Bubbles_09.wav" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <DupeMuteCount value="4"/>
+        <Pitch value="-3.000000,3.000000"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="GlacialTrailLaunch" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch5.wav"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Immortal_HardenedShieldImpact2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Immortal\Immortal_HardenedShieldImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Immortal\Immortal_HardenedShieldImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\Immortal\Immortal_HardenedShieldImpact2.wav"/>
+    </CSound>
+    <CSound id="NapalmSprayCastSound" parent="Ambience_Object">
+        <EditorCategories value="Race:Neutral"/>
+        <AssetArray File="Assets\Sounds\Uni\Events\Event_NPCDrilling0.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Events\Event_NPCDrilling3.wav"/>
+        <DupeDestroyCount value="32"/>
+        <DupeMuteCount value="4"/>
+        <Pitch value="-1.000000,2.000000"/>
+        <ResourcePriority value="16"/>
+        <SustainFade index="1" Time="2000" Volume="-96.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Nova_What2" parent="TerranAck">
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignUnits\Nova\Nova_What01.ogg" FacialAnim="Nova_What01"/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignUnits\Nova\Nova_What02.ogg" FacialAnim="Nova_What02"/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignUnits\Nova\Nova_What03.ogg" FacialAnim="Nova_What03"/>
+        <AssetArray File="LocalizedData\Sounds\TerranVO\CampaignUnits\Nova\Nova_What04.ogg" FacialAnim="Nova_What04"/>
+        <Select value="Sequential"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="ScreamerLaunch" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\RailGun_Launch00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RailGun_Launch01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\RailGun_Launch02.wav" Pitch="2.000000,2.000000" FacialGroup=""/>
+        <OverlapTimeDelta value="50"/>
+        <Pitch value="-2.000000,2.000000"/>
+        <Volume value="-2.000000,3.000000"/>
+        <VolumeRolloffPoints Distance="15.472779"/>
+        <VolumeRolloffPoints Distance="30.802292" Volume="-96.000000"/>
+    </CSound>
+    <CSound id="HookedTonguesImpact" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Spell_Yoink_Impact_01.wav" FacialGroup=""/>
+        <Pitch value="-2.000000,1.000000"/>
+        <Volume value="-9.000000,-9.000000"/>
+    </CSound>
+    <CSound id="SpyCloakOn" parent="Ambience_Object">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Doodad_WindTurbine0.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Doodad_WindTurbine1.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Doodad_WindTurbine2.wav"/>
+        <DupeDestroyCount value="12"/>
+        <DupeMuteCount value="8"/>
+        <ResourcePriority value="16"/>
+        <SustainFade index="1" Time="2000" Volume="-96.000000"/>
+        <Volume value="-9.000000,-9.000000"/>
+        <VolumeRolloffPoints Distance="1.589595"/>
+        <VolumeRolloffPoints Distance="5.057804" Volume="-96.000000"/>
+    </CSound>
+    <CSound id="SpyCloakOff" parent="Ambience_Object">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Doodad_WindTurbine0.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Doodad_WindTurbine1.wav"/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Doodad_WindTurbine2.wav"/>
+        <DupeDestroyCount value="12"/>
+        <DupeMuteCount value="8"/>
+        <ResourcePriority value="16"/>
+        <SustainFade index="1" Time="2000" Volume="-96.000000"/>
+        <Volume value="-9.000000,-9.000000"/>
+        <VolumeRolloffPoints Distance="1.589595"/>
+        <VolumeRolloffPoints Distance="5.057804" Volume="-96.000000"/>
+    </CSound>
+    <CSound id="CleaveSound" parent="Protoss_AttackImpactMediumSlice">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\SharedEffects\Attacks\Protoss_AttackImpactMediumSlice2.wav"/>
+        <AssetArray index="1" File="Assets\Sounds\Protoss\SharedEffects\Attacks\Protoss_AttackImpactMediumSlice3.wav"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+</Catalog>

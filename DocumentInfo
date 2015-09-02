@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <ModType>
+        <Value>Interface</Value>
+    </ModType>
+    <Icon>
+        <Value>EditorData\Images\UI_Arcade_IconPCarrier.tga</Value>
+    </Icon>
+    <Dependencies>
+        <Value>bnet:Swarm (Campaign)/0.0/999,file:Campaigns/Swarm.SC2Campaign</Value>
+        <Value>bnet:Swarm (Mod)/0.0/999,file:Mods/Swarm.SC2Mod</Value>
+        <Value>bnet:Swarm Multi (Mod)/0.0/999,file:Mods/SwarmMulti.SC2Mod</Value>
+        <Value>bnet:Swarm Story (Campaign)/0.0/999,file:Campaigns/SwarmStory.SC2Campaign</Value>
+    </Dependencies>
+    <Screenshot>
+        <File>
+            <Value>Screenshot2014-04-27 22_08_31.tga</Value>
+            <Value>Screenshot2014-04-27 22_07_09.tga</Value>
+            <Value>Terrain 001.tga</Value>
+        </File>
+        <CaptionId>
+            <Value>5</Value>
+            <Value>2</Value>
+            <Value>1</Value>
+        </CaptionId>
+        <Flags>
+            <Value> </Value>
+            <Value> </Value>
+            <Value> </Value>
+        </Flags>
+    </Screenshot>
+    <ScreenshotHowToPlay>
+        <File>
+            <Value>Screenshot2014-04-27 22_04_48.tga</Value>
+            <Value>Screenshot2014-04-27 22_06_19.tga</Value>
+            <Value>Screenshot2014-04-27 22_06_35.tga</Value>
+            <Value>Screenshot2014-04-27 22_05_20.tga</Value>
+        </File>
+        <CaptionId>
+            <Value>1</Value>
+            <Value>4</Value>
+            <Value>2</Value>
+            <Value>3</Value>
+        </CaptionId>
+        <Flags>
+            <Value> </Value>
+            <Value> </Value>
+            <Value> </Value>
+            <Value> </Value>
+        </Flags>
+    </ScreenshotHowToPlay>
+</DocInfo>

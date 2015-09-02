@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Regions>
+    <region id="1">
+        <name value="West Minion Guide: Spawn Zone"/>
+        <color value="255,255,128,0"/>
+        <shape type="rect">
+            <quad value="32.0002,54,52,64"/>
+        </shape>
+    </region>
+    <region id="2">
+        <name value="East Minion Guide: Spawn Zone"/>
+        <color value="255,255,128,0"/>
+        <shape type="rect">
+            <quad value="164.0002,54.004,184,64.004"/>
+        </shape>
+    </region>
+    <region id="8">
+        <name value="Minion Zones: West Top 1"/>
+        <color value="255,192,192,192"/>
+        <shape type="rect">
+            <quad value="20.0002,59.0002,56,93"/>
+        </shape>
+    </region>
+    <region id="9">
+        <name value="Minion Zones: West Bot 1"/>
+        <color value="255,0,0,0"/>
+        <shape type="rect">
+            <quad value="20.0002,34.0002,56,59"/>
+        </shape>
+    </region>
+    <region id="10">
+        <name value="Minion Zones: West Top 2"/>
+        <color value="255,0,0,0"/>
+        <shape type="rect">
+            <quad value="56.0046,54.9675,82.0043,114.9675"/>
+        </shape>
+    </region>
+    <region id="11">
+        <name value="Minion Zones: East Top 1"/>
+        <color value="255,192,192,192"/>
+        <shape type="rect">
+            <quad value="160,59.0002,196,93"/>
+        </shape>
+    </region>
+    <region id="12">
+        <name value="Minion Zones: East Top 2"/>
+        <color value="255,0,0,0"/>
+        <shape type="rect">
+            <quad value="134,55.0002,160,115"/>
+        </shape>
+    </region>
+    <region id="13">
+        <name value="Minion Zones: Top Center"/>
+        <color value="255,0,0,0"/>
+        <shape type="rect">
+            <quad value="104.0002,55.0002,112.0158,108.988"/>
+        </shape>
+    </region>
+    <region id="14">
+        <name value="Minion Zones: West Bot 2"/>
+        <color value="255,255,255,255"/>
+        <shape type="rect">
+            <quad value="56,18.0002,72,55"/>
+        </shape>
+    </region>
+    <region id="15">
+        <name value="Minion Zones: Bot Center"/>
+        <color value="255,255,255,255"/>
+        <shape type="rect">
+            <quad value="104,19.995,112,54.995"/>
+        </shape>
+    </region>
+    <region id="16">
+        <name value="Minion Zones: East Bot 2"/>
+        <color value="255,255,255,255"/>
+        <shape type="rect">
+            <quad value="144,18.0002,160,55"/>
+        </shape>
+    </region>
+    <region id="17">
+        <name value="Minion Zones: East Bot 1"/>
+        <color value="255,0,0,0"/>
+        <shape type="rect">
+            <quad value="160,34.0034,196,59.0034"/>
+        </shape>
+    </region>
+    <region id="3">
+        <name value="Minion Zones: West Bot 3"/>
+        <color value="255,0,0,0"/>
+        <shape type="rect">
+            <quad value="72.0002,18,104,55"/>
+        </shape>
+    </region>
+    <region id="4">
+        <name value="Minion Zones: East Bot 3"/>
+        <color value="255,0,0,0"/>
+        <shape type="rect">
+            <quad value="112.0002,18,144,55"/>
+        </shape>
+    </region>
+    <region id="5">
+        <name value="Minion Zones: West Top 3"/>
+        <color value="255,255,255,255"/>
+        <shape type="rect">
+            <quad value="82.0002,55.0002,104,115"/>
+        </shape>
+    </region>
+    <region id="6">
+        <name value="Minion Zones: East Top 3"/>
+        <color value="255,255,255,255"/>
+        <shape type="rect">
+            <quad value="112.0002,55,134,115"/>
+        </shape>
+    </region>
+    <region id="7">
+        <name value="West Jungle Mitoscarab Leash Zone"/>
+        <color value="255,128,255,128"/>
+        <shape type="circle">
+            <center value="80,51"/>
+            <radius value="3.75"/>
+        </shape>
+    </region>
+    <region id="18">
+        <name value="East Jungle Mitoscarab Leash Zone"/>
+        <color value="255,128,255,128"/>
+        <shape type="circle">
+            <center value="136,51"/>
+            <radius value="3.75"/>
+        </shape>
+    </region>
+    <region id="19">
+        <name value="West Jungle Quillgor Leash Zone"/>
+        <color value="255,128,255,128"/>
+        <shape type="circle">
+            <center value="67.5,51.5"/>
+            <radius value="3.75"/>
+        </shape>
+    </region>
+    <region id="20">
+        <name value="East Jungle Quillgor Leash Zone"/>
+        <color value="255,128,255,128"/>
+        <shape type="circle">
+            <center value="148.5,51.5"/>
+            <radius value="3.75"/>
+        </shape>
+    </region>
+    <region id="21">
+        <name value="West Jungle Tyrannozor Leash Zone"/>
+        <color value="255,128,255,128"/>
+        <shape type="circle">
+            <center value="69,60"/>
+            <radius value="3.75"/>
+        </shape>
+    </region>
+    <region id="22">
+        <name value="East Jungle Tyrannozor Leash Zone"/>
+        <color value="255,128,255,128"/>
+        <shape type="circle">
+            <center value="147,60"/>
+            <radius value="3.75"/>
+        </shape>
+    </region>
+    <region id="23">
+        <name value="West Jungle Ursadon Leash Zone"/>
+        <color value="255,128,255,128"/>
+        <shape type="circle">
+            <center value="82,64"/>
+            <radius value="3.75"/>
+        </shape>
+    </region>
+    <region id="24">
+        <name value="East Jungle Ursadon Leash Zone"/>
+        <color value="255,128,255,128"/>
+        <shape type="circle">
+            <center value="133.9965,64"/>
+            <radius value="3.75"/>
+        </shape>
+    </region>
+    <region id="25">
+        <name value="Region 001"/>
+        <shape type="circle">
+            <center value="40,59"/>
+            <radius value="8.775"/>
+        </shape>
+    </region>
+    <region id="26">
+        <name value="Watchtower Capture"/>
+        <color value="255,0,255,0"/>
+        <shape type="circle">
+            <center value="108,82.5"/>
+            <radius value="2.5"/>
+        </shape>
+    </region>
+    <region id="27">
+        <name value="Watchtower Reveal"/>
+        <shape type="circle">
+            <center value="108,85.5"/>
+            <radius value="7.5"/>
+        </shape>
+        <shape type="rect">
+            <quad value="97.25,80.75,104.75,88.25"/>
+        </shape>
+        <shape type="rect">
+            <quad value="111.25,80.75,118.75,88.25"/>
+        </shape>
+    </region>
+    <region id="28">
+        <name value="West Healing Circle"/>
+        <shape type="circle">
+            <center value="28,59"/>
+            <radius value="4.75"/>
+        </shape>
+    </region>
+    <region id="29">
+        <name value="East Healing Circle"/>
+        <shape type="circle">
+            <center value="188.002,59"/>
+            <radius value="4.75"/>
+        </shape>
+    </region>
+</Regions>

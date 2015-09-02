@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CAbilEffectInstant id="Again">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="AgainSet"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="120"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Again" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="BileBlast">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="BileBlastLaunchMissile"/>
+        <Range value="7.5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BileBlast" Requirements="NotDisguiseReplica"/>
+        <CursorEffect value="BileBlastSearchArea"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="20"/>
+            <Cooldown TimeUse="12"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Bomb">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="BombInitialSet"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="12"/>
+        </Cost>
+        <Range value="6"/>
+        <CursorEffect value="BombDamage"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Bomb" Requirements="NotDisguiseReplica"/>
+        <CastIntroTime value="0.1"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="AdrenalAcid">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="AdrenalAcidLaunchMissile"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Bomb"/>
+            <Cooldown Link="Abil/Bomb" TimeUse="12"/>
+        </Cost>
+        <Range value="6"/>
+        <CursorEffect value="AdrenalAcidDebuffSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AdrenalAcid" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="Burrow2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ApplyBurrowDelay2"/>
+        <Cost>
+            <Charge Link="Abil/Burrow"/>
+            <Cooldown Link="Abil/HerodiasBurrow" TimeUse="7.5"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Burrow2" Requirements="CastBurrow2"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Frostbite">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="FrostbiteCastSet"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="11"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Frostbite" Requirements="NoFrostbiteAttack"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="GlacialTrail2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GlacialTrailOffset2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+        <Range value="10"/>
+        <ArcSlop value="0"/>
+        <CastIntroTime value="0.3"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <CursorEffect value="GlacialTrailImpactDamage2"/>
+        <ProgressButtonArray index="Cast" value="GlacialTrail"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GlacialTrail2" Requirements="IsDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="GraviticStomp2">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="GraviticStompCreatePersistent2"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/GraviticStomp"/>
+            <Cooldown Link="Abil/GraviticStomp" TimeUse="7"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GravityStomp2" Requirements="IsDisguiseReplica"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="HookedTongue2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="HookedTonguesOffset2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/HookedTongue"/>
+            <Cooldown Link="Abil/HookedTongue" TimeUse="15"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastOutroTime value="0.5"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HookedTongue2" Requirements="UseHookedTongueBasic2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="HookedTongueLong2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="HookedTonguesOffsetLong2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastOutroTime value="0.5"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HookedTongue2" Requirements="UseHookedTongueLong2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Pounce">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="PounceInitialSet"/>
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Flags index="WaitToSpend" value="0"/>
+        <Cost>
+            <Charge Link="Abil/GiantYetiLeap"/>
+            <Cooldown Link="GiantYetiLeap"/>
+        </Cost>
+        <Range value="500"/>
+        <RangeSlop value="7"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Wait" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <UninterruptibleArray index="Bail" value="1"/>
+        <CursorEffect value="PounceImpactSearch"/>
+        <EffectRange index="0" value="0,7"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Pounce2" Requirements="NotDisguiseReplica"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="HookedTongueLong">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="HookedTonguesOffsetLong"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastOutroTime value="0.5"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HookedTongue" Requirements="UseHookedTongueLong"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Icebreaker">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="IcebreakerFindFrostShard"/>
+        <Cost>
+            <Cooldown TimeUse="90"/>
+        </Cost>
+        <Range value="10"/>
+        <CursorEffect value="IcebreakerSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Icebreaker" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="LaunchPylon">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <InfoTooltipPriority value="21"/>
+        <Effect index="0" value="PylonRelease"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/AutoTurret"/>
+            <Cooldown Location="Unit" TimeUse="30"/>
+        </Cost>
+        <Placeholder value="Pylon2"/>
+        <Range value="6"/>
+        <Marker Link="Abil/AutoTurret"/>
+        <ErrorAlert value="Error"/>
+        <CursorEffect value="PylonDamageSearch"/>
+        <AINotifyEffect value="AutoTurret"/>
+        <ProducedUnitArray value="Pylon2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LaunchPylon" Requirements="NotDisguiseReplica"/>
+        <PlaceUnit value="Pylon2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="Burrow">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ApplyBurrowDelay"/>
+        <Cost>
+            <Cooldown Link="Abil/HerodiasBurrow" TimeUse="7.5"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Burrow" Requirements="CastBurrow"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="Corrupt">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="CorruptInitialSet"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <CursorEffect value="CorruptMissileSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Corrupt" Requirements="NotDisguiseReplica"/>
+        <Cost>
+            <Vital index="Energy" value="10"/>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+        <FinishTime value="0.05"/>
+        <EffectRange index="0" value="0,3"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="Dampener">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="DampenerApplyInitial"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Dampener" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HardenedShield">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="HardenedShieldApplyPrecursor"/>
+        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HardenedShield2" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ElectricRazor">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ElectricRazorTargetPointOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="12"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastIntroTime value="0.3"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="ElectricRazor"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ElectricRazor" Requirements="CastElectricRazor"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ForceField2">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/HeroForceField"/>
+                <TimeUse value="6"/>
+            </Charge>
+            <Cooldown Link="Abil/HeroForceField"/>
+        </Cost>
+        <Range value="7"/>
+        <Marker>
+            <MatchFlags index="Link" value="0"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+        </Marker>
+        <CursorEffect value="ForceFieldPlacement2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForceField2" Requirements="NotDisguiseReplica"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <PlaceUnit value="ForceField2"/>
+        <CastIntroTime value="0.05"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="Fluxclaws">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="FluxclawsCastSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="3"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Maim"/>
+                <TimeUse value="12"/>
+            </Charge>
+            <Cooldown Link="Abil/Maim" TimeUse="1"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Fluxclaws" Requirements="UseFluxclaws"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Invisibility">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="InvisibilityInitialCastSet"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="100"/>
+                <CountStart value="100"/>
+                <CountUse value="15"/>
+                <Location value="Player"/>
+            </Charge>
+            <Cooldown TimeUse="8"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Invisibility" Requirements="CanCloak"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="PylonOvercharge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="PylonOverchargeSearch"/>
+        <Cost>
+            <Cooldown TimeUse="70"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PylonOvercharge" Requirements="HasPylon"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="RemoveInvisibility">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="InvisibilityRemoveSetAbility"/>
+        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RemoveInvisibility" Requirements="CanDecloak"/>
+    </CAbilEffectInstant>
+    <CAbilTransport id="NydusWormTransport">
+        <OrderArray index="0" Color="255,0,255,0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3" LineTexture="Assets\Textures\WayPointLine.dds"/>
+        <AbilSetId value="ULdS"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Load" DefaultButtonFace="NydusCanalLoad"/>
+        <CmdButtonArray index="UnloadAll" DefaultButtonFace="NydusCanalUnloadAll">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="UnloadAt">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="UnloadUnit">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="LoadAll">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <Flags index="ShowCargoSize" value="0"/>
+        <Range value="0.5"/>
+        <MaxCargoCount value="3"/>
+        <MaxCargoSize value="8"/>
+        <TotalCargoSpace value="6"/>
+        <InitialUnloadDelay value="0.5"/>
+        <UnloadPeriod value="0.5"/>
+        <LoadValidatorArray value="NotSpawnling"/>
+        <LoadValidatorArray value="NotWidowMineTarget"/>
+    </CAbilTransport>
+    <CAbilEffectInstant id="Recall">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CastIntroTime value="8"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="Recall"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Recall"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="RepeaterLance">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="RepeaterLanceTargetPointOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/ElectricRazor"/>
+            <Cooldown Link="Abil/ElectricRazor" Location="Unit" TimeUse="12"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastIntroTime value="0.2"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="ElectricRazor"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RepeaterLance" Requirements="RepeaterLanceRequirements"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="BlueFlame">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="BlueFlameCastSet"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/Maim"/>
+            <Cooldown TimeUse="14"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BlueFlame" Requirements="UseBlueFlame"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="Dart">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="DartCreatePersistent"/>
+        <Flags index="DeferCooldown" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Lunge"/>
+            <Cooldown Location="Unit" TimeUse="10"/>
+        </Cost>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Dart" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="PsionicStorm">
+        <Alignment value="Negative"/>
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="PsionicStormInitialPersistent"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/KarassPsiStorm"/>
+            <Cooldown Link="Abil/KarassPsiStorm" TimeUse="6"/>
+        </Cost>
+        <Range value="7"/>
+        <CastOutroTime value="0.5"/>
+        <CursorEffect value="PsionicStormDummySearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PsionicStorm" Requirements="NotDisguiseReplica"/>
+        <CastIntroTime value="0.2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="NapalmSpray">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="90"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NapalmSpray" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="RepeaterLance2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="RepeaterLanceTargetPointOffset2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/ElectricRazor"/>
+            <Cooldown Link="Abil/ElectricRazor" Location="Unit" TimeUse="12"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastIntroTime value="0.1"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="ElectricRazor"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RepeaterLance2" Requirements="RepeaterLanceRequirements2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Revenge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="RevengeLaunchMissile"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Revenge" Requirements="NotDisguiseReplica"/>
+        <TargetFilters value="-;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Cost>
+            <Vital index="Energy" value="15"/>
+            <Cooldown TimeUse="7"/>
+        </Cost>
+        <CastIntroTime value="0.2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="NutritiveVomit">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="VileBurstLaunchMissile"/>
+        <Flags index="BestUnit" value="0"/>
+        <Cost>
+            <Charge Link="Abil/VileBurst"/>
+            <Cooldown Link="Abil/VileBurst" TimeUse="18"/>
+        </Cost>
+        <Range value="3"/>
+        <FinishTime value="0.1"/>
+        <CursorEffect value="VileBurstDamage"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NutritiveVomit" Requirements="UseNutritiveVomit"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="HookedTongue">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="HookedTonguesOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastOutroTime value="0.5"/>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HookedTongue" Requirements="UseHookedTongueBasic"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GlacialTrail">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GlacialTrailOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="10"/>
+        <ArcSlop value="0"/>
+        <CastIntroTime value="0.3"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <CursorEffect value="GlacialTrailImpactDamage"/>
+        <ProgressButtonArray index="Cast" value="GlacialTrail"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GlacialTrail" Requirements="NotDisguiseReplica"/>
+        <Cost>
+            <Cooldown TimeUse="10"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="SeekerBeam2">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <Effect index="0" value="SeekerBeamTargetPointOffset2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/SeekerBeam"/>
+            <Cooldown Link="Abil/SeekerBeam" TimeUse="8"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SeekerBeam3" Requirements="IsDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Snapper3">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SnapperTargetPointOffset2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Screamer"/>
+            <Cooldown Link="Abil/Screamer" Location="Unit" TimeUse="5"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Snapper2" Requirements="UseSnapperCopy"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Snipe22">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SnipeInitialSet2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Snipe2"/>
+            <Cooldown Link="Abil/Snipe2" TimeUse="7"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Snipe22" Requirements="IsDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Symbiosis">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SymbiosisInitialSet"/>
+        <TargetFilters value="-;Self,Neutral,Enemy,Missile,Stasis,Dead,Invulnerable"/>
+        <Range value="4"/>
+        <RangeSlop value="2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Symbiosis" Requirements="UseSymbiosis"/>
+        <Cost>
+            <Cooldown TimeUse="80"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ThrowBaneling2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ThrowBanelingInitialSet2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="15"/>
+            <Charge Link="Abil/ThrowBaneling"/>
+            <Cooldown Link="Abil/ThrowBaneling" TimeUse="5"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="ThrowBaneling"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ThrowBaneling2" Requirements="IsDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TradeWinds">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TradeWindsBuffMissilesPersistent"/>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Twingale" Requirements="NotDisguiseReplica"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="13"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Tunnel2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TunnelSet2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="Tunnel"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Tunnel2" Requirements="CastTunnel2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Turbo2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TurboCreatePersistent2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Lunge"/>
+            <Cooldown Link="Abil/Lunge" TimeUse="12"/>
+        </Cost>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Turbo2" Requirements="IsDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="Up">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="UpInitialSet"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Up" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="RadarMineAttack">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <Effect index="0" value="RadarMineInitialAttackSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <Cost>
+            <Charge Link="Abil/WidowMineAttack"/>
+            <Cooldown Link="Abil/WidowMineAttack" TimeUse="40"/>
+        </Cost>
+        <TargetFilters value="Visible;Player,Ally,Neutral,Structure,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="2.5"/>
+        <RangeSlop value="0"/>
+        <Arc value="360"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,Missile,Item,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AutoCastRange value="2.5"/>
+        <AutoCastValidatorArray value="IsNotDisguisedChangeling"/>
+        <AutoCastValidatorArray value="NotHallucinationOrNotDetected"/>
+        <AutoCastValidatorArray value="noMarkers"/>
+        <AutoCastValidatorArray value="RadarMineArmTime"/>
+        <PrepTime value="0.25"/>
+        <AINotifyEffect value="WidowMineAttack"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RadarMineAttack">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Wildfire">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="WildfireOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastIntroTime value="0.6"/>
+        <FinishTime value="0.1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Wildfire" Requirements="NotDisguiseReplica"/>
+        <Cost>
+            <Cooldown TimeUse="110"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TractorBeam">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TractorBeamTargetPointOffset0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TractorBeam" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Snipe2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SnipeInitialSet"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Snipe2" Requirements="NotDisguiseReplica"/>
+        <Cost>
+            <Cooldown TimeUse="7"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ChronoBoost">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+        <Effect index="0" value="ChronoBoost2"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/TimeWarp"/>
+            <Cooldown Link="Abil/TimeWarp" TimeUse="90"/>
+        </Cost>
+        <UninterruptibleArray index="Approach" value="1"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ChronoBoost" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="Turbo">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TurboCreatePersistent"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Lunge"/>
+            <Cooldown Link="Abil/Lunge" TimeUse="12"/>
+        </Cost>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Turbo" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="CancelPersonalWarp2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="PersonalWarpRunningBuffRemove2"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CancelPersonalWarp2" Requirements="HavePersonalWarpRunning2"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="OilPuddle">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="OilPuddleTargetPointOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CastIntroTime value="0.05"/>
+        <FinishTime value="0.15"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <ProgressButtonArray index="Cast" value="OilPuddle"/>
+        <ProgressButtonArray index="Finish" value="OilPuddle"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="OilPuddle" Requirements="NotDisguiseReplica"/>
+        <Cost>
+            <Cooldown TimeUse="13"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="Longshock">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="LongshockActivationSet"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="4"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Longshock" Requirements="CastLongshock"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="SummonNydusWorm">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="NydusWormPersistent"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="10"/>
+            <Cooldown Link="Abil/SummonNydusWormIG" Location="Unit" TimeUse="110"/>
+        </Cost>
+        <Range value="7"/>
+        <CastOutroTime value="1.5"/>
+        <ShowProgressArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <CursorEffect value="NydusWormDummyArea"/>
+        <ProgressButtonArray index="Channel" value="SummonNydusWorm2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SummonNydusWorm2" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Purge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="PurgeLM"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="110"/>
+        </Cost>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Purge" Requirements="CastPurge"/>
+        <TargetFilters value="Heroic;Self,Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="SummonedZerglingUnburrow">
+        <OrderArray index="0" Color="255,0,255,0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3" LineTexture="Assets\Textures\WayPointLine.dds"/>
+        <AbilSetId value="BrwU"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="Zergling2">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="0.3"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.3"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden"/>
+        <AutoCastValidatorArray value="TargetNotChangeling"/>
+        <AutoCastRange value="2"/>
+        <AutoCastCountMin value="1"/>
+    </CAbilMorph>
+    <CAbilEffectTarget id="CalledShot">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="CalledShotInitialSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="17"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ShowProgressArray index="Channel" value="1"/>
+        <ProgressButtonArray index="Prep" value="Thataway"/>
+        <ProgressButtonArray index="Cast" value="Thataway"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Thataway" Requirements="UseCalledShot"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="PersonalWarp2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="PersonalWarpPersistent2"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <AINotifyEffect value="PersonalWarpTeleport"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PersonalWarp2" Requirements="NoPersonalWarpRunning2"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="CancelPersonalWarp">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="PersonalWarpRunningBuffRemove"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CancelPersonalWarp" Requirements="CancelPersonalWarp"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="FirefistFlying">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="FirefistFlyingCreateBehaviorPersistent"/>
+        <Flags index="BestUnit" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Firefist" Requirements="CasterIsInTakeoffAndHeight2"/>
+        <Cost>
+            <Cooldown Link="Abil/Firefist" Location="Unit" TimeUse="6"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="FirefistGround">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="FirefistGroundCreatePersistent"/>
+        <TargetFilters value="-;Player,Ally,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1.1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Firefist" Requirements="CasterIsNotInTakeoff"/>
+        <Cost>
+            <Cooldown Link="Abil/Firefist" Location="Unit" TimeUse="6"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="GraviticStomp">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="GraviticStompCreatePersistent"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GravityStomp" Requirements="NotDisguiseReplica"/>
+        <Cost>
+            <Cooldown TimeUse="7"/>
+        </Cost>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="DarkAspect">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <AbilSetId value="Blnk"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="DarkAspectInitialSet"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="WaitToSpend" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+            <Cooldown Link="Blink"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CastOutroTime value="0"/>
+        <AINotifyEffect value="DarkAspectTeleport"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DarkAspect" Requirements="LightAspectAbilities">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <EffectRange index="0" value="0,6"/>
+        <CursorEffect value="DarkAspectDamage"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="DarkAspectBlinkDummy">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SJHyperionBlink">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Lunge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="LungeCreatePersistent"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="12"/>
+        </Cost>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Lunge" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="RemoveDisguise">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="DisguiseRemoveReplicaBuff"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RemoveDisguise" Requirements="IsDisguiseReplica"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Cleave">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="CleaveCreatePersistent"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ShockCleave" Requirements="NotDisguiseReplica"/>
+        <Cost>
+            <Cooldown TimeUse="7"/>
+        </Cost>
+        <FinishTime value="0.1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="Disguise">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="DisguiseUniversalSet"/>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Disguise2"/>
+        <Arc value="360"/>
+        <PrepTime value="2"/>
+        <CastIntroTime value="0"/>
+        <FinishTime value="0"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <ProgressButtonArray index="Prep" value="Disguise2"/>
+        <TargetFilters value="-;Self,Structure"/>
+        <Cost>
+            <Cooldown TimeUse="90"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="GravityWell2">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="GravityWellInitialSet"/>
+        <Cost>
+            <Charge Link=""/>
+            <Cooldown Link="GravityWell" TimeUse="12"/>
+        </Cost>
+        <Range value="5"/>
+        <CursorEffect value="GravityWellSearchSlowPull"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GravityWell2" Requirements="DarkAspectAbilities"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="LightAspect">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="LightAspectInitialSet"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="WaitToSpend" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+            <Charge Link="Abil/PsiStorm"/>
+            <Cooldown Link="Abil/PsiStorm"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CastOutroTime value="0"/>
+        <CursorEffect value="PsiStormSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LightAspect" Requirements="DarkAspectAbilities"/>
+        <EffectRange index="0" value="0,6"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="PersonalWarp">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="PersonalWarpSwitch"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Range value="6"/>
+        <AINotifyEffect value="PersonalWarpTeleport"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PersonalWarp" Requirements="UsePersonalWarp"/>
+        <Arc value="360"/>
+        <Cost>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="RocketSentry">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="RocketSentryCreate"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="5"/>
+        </Cost>
+        <Placeholder value="RocketSentry"/>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RocketSentry" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="RocketSentryLaunchSelf" parent="SeekerMissile">
+        <Name value="Abil/Name/RocketSentryLaunchSelf"/>
+        <Effect index="0" value="RocketSentryLaunchMissile"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+        </Cost>
+        <TargetFilters index="0" value="Visible;Self,Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RocketSentryLaunchSelf"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ThrowBaneling">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ThrowBanelingInitialSet"/>
+        <Cost>
+            <Vital index="Energy" value="15"/>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="ThrowBaneling"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ThrowBaneling" Requirements="NotDisguiseReplica"/>
+        <Flags index="RequireTargetVision" value="0"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Snapper2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SnapperLaunchMissileFlying"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Screamer"/>
+            <Cooldown Link="Abil/Screamer" Location="Unit" TimeUse="5"/>
+        </Cost>
+        <Range value="9"/>
+        <ArcSlop value="0"/>
+        <CursorEffect value="SnapperSplatDummy"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Snapper" Requirements="CasterIsInTakeoff"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Skillshot">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SkillshotTargetpointOffset"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Skillshot"/>
+        <Flags index="RequireTargetVision" value="0"/>
+    </CAbilEffectTarget>
+    <CAbilBehavior id="Cloak">
+        <OrderArray index="0" Color="255,0,255,0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3" LineTexture="Assets\Textures\WayPointLine.dds"/>
+        <AbilSetId value="Clok"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="SpyCloak" Requirements="UseSpyAbilities">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Off" DefaultButtonFace="CloakOff2" Requirements="UseSpyAbilities">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="15"/>
+            <Charge CountMax="101" CountStart="100" Link="Abil/SpyCloak"/>
+            <Cooldown Link="Abil/GhostCloak" TimeUse="8"/>
+        </Cost>
+        <BehaviorArray value="Invisibility"/>
+    </CAbilBehavior>
+    <CAbilEffectTarget id="RetrofluxBubble">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="RetrofluxBubbleCreatePersistent"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="WaitToSpend" value="0"/>
+        <Cost>
+            <Charge Link="Abil/TemporalField"/>
+            <Cooldown Link="Abil/TemporalField" TimeUse="20"/>
+        </Cost>
+        <Range value="6.5"/>
+        <Arc value="360"/>
+        <CursorEffect value="RetrofluxBubbleSearchforUnits"/>
+        <AINotifyEffect value="TemporalFieldCreatePersistent"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RetrofluxBubble" Requirements="LightAspectAbilities"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="SeekerBeam">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <Effect index="0" value="SeekerBeamTargetPointOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SeekerBeam" Requirements="LightAspectAbilities"/>
+        <Cost>
+            <Cooldown TimeUse="8"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="Maim">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MaimCastSet"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown Location="Player" TimeUse="14"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Maim" Requirements="UseMaim"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="Snapper">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SnapperTargetPointOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/Screamer"/>
+            <Cooldown Link="Abil/Screamer" Location="Unit" TimeUse="5"/>
+        </Cost>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Snapper" Requirements="CasterIsNotInTakeoff"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Takeoff">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TakeoffCreatePersistent"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Cooldown TimeUse="25"/>
+        </Cost>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Takeoff" Requirements="NotDisguiseReplica"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Torpedo">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TorpedoTargetPointOffset"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <ArcSlop value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Torpedo" Requirements="DarkAspectAbilities"/>
+        <Cost>
+            <Cooldown TimeUse="12"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Tunnel">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TunnelSet"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Tunnel" Requirements="CastTunnel"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="Tunnel"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="UseRadarMine">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="RadarMineCU"/>
+        <Flags index="DeferCooldown" value="1"/>
+        <Cost>
+            <Charge Link="Abil/RadarMines" Location="Unit"/>
+            <Cooldown Link="Abil/RadarMines" Location="Player" TimeUse="12"/>
+        </Cost>
+        <Placeholder value="RadarMineBurrowed"/>
+        <Range value="3"/>
+        <CursorEffect value="RadarMineDamage"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RadarMines" Requirements="UseSpyAbilities"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="VultureSpiderMineBurrow2">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <ActorKey value="BurrowDown"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <Cost>
+            <Charge Link="Abil/SpiderMineBurrow"/>
+            <Cooldown Link="Abil/SpiderMineBurrow"/>
+        </Cost>
+        <InfoArray Unit="RadarMineBurrowed">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="1.5"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Delay" value="3.5332"/>
+                <DurationArray index="Duration" value="1.067"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Delay" value="3.5332"/>
+                <DurationArray index="Duration" value="1"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="4.5332"/>
+                <EffectArray index="Start" value="SpiderMineVulnerable"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Worker,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AutoCastRange value="2"/>
+        <AbilClassDisableArray index="CAbilEffect" value="1"/>
+        <AbilClassDisableArray index="CAbilEffectInstant" value="1"/>
+        <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>
+    </CAbilMorph>
+    <CAbilEffectTarget id="Chronoshield2">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ChronoshieldApply"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Cost>
+            <Charge Link="Abil/Yoink"/>
+            <Cooldown Link="Abil/Yoink" TimeUse="12"/>
+        </Cost>
+        <TargetFilters value="-;Neutral,Enemy,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <AINotifyEffect value="FaceEmbrace"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Chronoshield" Requirements="LightAspectAbilities"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="RadarMineUnburrow">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <Cost>
+            <Charge Link="Abil/SpiderMineUnburrow"/>
+            <Cooldown Link="Abil/SpiderMineUnburrow"/>
+        </Cost>
+        <InfoArray Unit="RadarMine">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.6"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0.6"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.6"/>
+                <EffectArray index="Start" value="SpiderMineInvulnerable"/>
+            </SectionArray>
+        </InfoArray>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Worker,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AutoCastRange value="2"/>
+        <AutoCastCountMin value="1"/>
+    </CAbilMorph>
+</Catalog>

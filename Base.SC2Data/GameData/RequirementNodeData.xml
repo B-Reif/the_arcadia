@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirementAnd id="AndCountBehaviorDarkAspectCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorDarkAspectCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorDisguiseReplicaCompleteOnlyAtUnitOrCountBehaviorBurrow2CompleteOnlyAtUnitCountBehaviorBurrowDelay2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="OrCountBehaviorBurrow2CompleteOnlyAtUnitCountBehaviorBurrowDelay2CompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorHookedTongueRecast2CompleteOnlyAtUnitCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorHookedTongueRecast2CompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorHookedTongueRecastCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorHookedTongueRecastCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorLightAspectCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorLightAspectCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorPersonalWarpRunningCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorPersonalWarpRunningCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit1731956433GT1366662853CountBehaviorTakeoffHeightStacksCompleteOnlyAtUnit2">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit1731956433"/>
+        <OperandArray value="GT1366662853CountBehaviorTakeoffHeightStacksCompleteOnlyAtUnit2"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorBurrow2CompleteOnlyAtUnitNotCountBehaviorBurrowDelay2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorBurrow2CompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorBurrowDelay2CompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorBurrow2CompleteOnlyAtUnitNotCountBehaviorBurrowDelay2CompleteOnlyAtUnitCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorBurrow2CompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorBurrowDelay2CompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorBurrowCompleteOnlyAtUnitNotCountBehaviorBurrowDelayCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorBurrowCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorBurrowCompleteOnlyAtUnitNotCountBehaviorBurrowDelayCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorBurrowCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitOrCountBehaviorBurrowCompleteOnlyAtUnitCountBehaviorBurrowDelayCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="OrCountBehaviorBurrowCompleteOnlyAtUnitCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorHookedTongueRecast2CompleteOnlyAtUnitCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorHookedTongueRecast2CompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorHookedTongueRecastCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorHookedTongueRecastCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorLongshockCompleteOnlyAtUnitNotCountBehaviorBurrowCompleteOnlyAtUnitNotCountBehaviorBurrowDelayCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorLongshockCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorBurrowCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorPersonalWarpRunningCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorPersonalWarpRunningCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnitCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="NotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnitOrGTCountUnitRadarMineCompleteOnly0GTCountUnitRadarMineBurrowedCompleteOnly0">
+        <Tooltip value=""/>
+        <OperandArray value="OrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit"/>
+        <OperandArray value="OrGTCountUnitRadarMineCompleteOnly0GTCountUnitRadarMineBurrowedCompleteOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrCountBehaviorInvisibilityCompleteOnlyAtUnitCountBehaviorInvisibilityFadeInCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnitCountBehaviorCloakFadeInCoverCompleteOnlyAtUnitOrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="OrCountBehaviorInvisibilityCompleteOnlyAtUnitCountBehaviorInvisibilityFadeInCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnitCountBehaviorCloakFadeInCoverCompleteOnlyAtUnit"/>
+        <OperandArray value="OrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorAmbushCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Ambush" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorBurrow2CompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Burrow2" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorBlueFlameCompleteOnlyAtUnit2029541140">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BlueFlame" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorBurrowDelay2CompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="BurrowDelay2" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorBurrowCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Burrow" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorBurrowCompleteOnlyAtUnit2">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Burrow2" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorBurrowDelayCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="BurrowDelay" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCalledShotAttackBehaviorCompleteOnlyAtUnit358711164">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="CalledShotAttackBehavior" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCloakFadeInCoverCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="CloakFadeInCover" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDarkAspectCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DarkAspect" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="DisguiseReplica" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorFluxclawsCompleteOnlyAtUnit3423511315">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Fluxclaws" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorFrostbiteAttackCompleteOnlyAtUnit1660618275">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="FrostbiteAttack" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorHookedTongueRecast2CompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="HookedTongueRecast2" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorHookedTongueRecastCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="HookedTongueRecast" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorInvisibilityCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Invisibility" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorInvisibilityFadeInCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="InvisibilityFadeIn" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="InvisibilitySuppressionDamage" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="InvisibilitySuppressionProximity" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorLightAspectCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="LightAspect" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorLongshockCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Longshock" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMaimCompleteOnlyAtUnit588042383">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Maim" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMaimCompleteOnlyAtUnit5880423832">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BlueFlame" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMaimCompleteOnlyAtUnit5880423833">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Fluxclaws" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PersonalWarpRunning2" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMaimCompleteOnlyAtUnit5880423834">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PersonalWarpAttack" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPersonalWarpRunningCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PersonalWarpRunning" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPrecursorCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Precursor" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="SpyValidatorBehavior" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSymbiosisCasterCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="SymbiosisCaster" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="TakeoffControllerBehavior" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit1731956433">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TakeoffControllerBehavior" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorTakeoffHeightStacksCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="TakeoffHeightStacks" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitPylon2CompleteOnly3309290432">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Pylon2" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRadarMineBurrowedCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RadarMineBurrowed" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRadarMineCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RadarMine" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRepeaterLanceWeaponCompleteOnly397479403">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="RepeaterLanceWeapon" State="CompleteOnly"/>
+    </CRequirementCountUnit>
+    <CRequirementGT id="GT1366662853CountBehaviorTakeoffHeightStacksCompleteOnlyAtUnit2">
+        <OperandArray index="0" value="CountBehaviorTakeoffHeightStacksCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGT>
+    <CRequirementGT id="GTCountUnitRadarMineCompleteOnly0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRadarMineCompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementGT>
+    <CRequirementNot id="NotCountBehaviorBurrow2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorBurrow2CompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorBurrowDelay2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorBurrowDelay2CompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="Not3374928935OrCountBehaviorInvisibilityCompleteOnlyAtUnitCountBehaviorInvisibilityFadeInCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnitCountBehaviorCloakFadeInCoverCompleteOnlyAtUnit">
+        <OperandArray index="0" value="OrCountBehaviorInvisibilityCompleteOnlyAtUnitCountBehaviorInvisibilityFadeInCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnitCountBehaviorCloakFadeInCoverCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorBlueFlameCompleteOnlyAtUnit2029541140">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorBlueFlameCompleteOnlyAtUnit2029541140"/>
+    </CRequirementNot>
+    <CRequirementGT id="GTCountUnitRadarMineBurrowedCompleteOnly0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRadarMineBurrowedCompleteOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementGT>
+    <CRequirementNot id="NotCountBehaviorBurrowDelayCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorBurrowCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorBurrowCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorFluxclawsCompleteOnlyAtUnit3423511315">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorFluxclawsCompleteOnlyAtUnit3423511315"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorHookedTongueRecast2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorHookedTongueRecast2CompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorFrostbiteAttackCompleteOnlyAtUnit1660618275">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorFrostbiteAttackCompleteOnlyAtUnit1660618275"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorHookedTongueRecastCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorHookedTongueRecastCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorCalledShotAttackBehaviorCompleteOnlyAtUnit358711164">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorCalledShotAttackBehaviorCompleteOnlyAtUnit358711164"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorPrecursorCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorPrecursorCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorLongshockCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorLongshockCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUnitRepeaterLanceWeaponCompleteOnly397479403">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRepeaterLanceWeaponCompleteOnly397479403"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementOr id="OrCountBehaviorBurrow2CompleteOnlyAtUnitCountBehaviorBurrowDelay2CompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorBurrow2CompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorBurrowDelay2CompleteOnlyAtUnit"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountBehaviorBurrowCompleteOnlyAtUnitCountBehaviorBurrowDelayCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorBurrowCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit"/>
+    </CRequirementOr>
+    <CRequirementNot id="NotCountBehaviorPersonalWarpRunningCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorPersonalWarpRunningCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorAmbushCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorAmbushCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountBehaviorMaimCompleteOnlyAtUnit588042383">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorMaimCompleteOnlyAtUnit588042383"/>
+    </CRequirementNot>
+    <CRequirementOr id="OrCountBehaviorInvisibilityCompleteOnlyAtUnitCountBehaviorInvisibilityFadeInCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnitCountBehaviorCloakFadeInCoverCompleteOnlyAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorInvisibilityCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorInvisibilityFadeInCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorCloakFadeInCoverCompleteOnlyAtUnit"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrGTCountUnitRadarMineCompleteOnly0GTCountUnitRadarMineBurrowedCompleteOnly0">
+        <Tooltip value=""/>
+        <OperandArray value="GTCountUnitRadarMineCompleteOnly0"/>
+        <OperandArray value="GTCountUnitRadarMineBurrowedCompleteOnly0"/>
+    </CRequirementOr>
+</Catalog>

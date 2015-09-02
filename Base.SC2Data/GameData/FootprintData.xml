@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CFootprint id="BuildableShrubFootprint1x1">
+        <Layers index="Check" Area="0,0,1,1">
+            <Sets Character="o">
+                <Negative index="NoBuild" value="1"/>
+                <Negative index="ShrubVision" value="1"/>
+            </Sets>
+            <Rows value="."/>
+        </Layers>
+        <Layers index="Place" Area="0,0,1,1">
+            <Sets index="0">
+                <Positive index="ShrubVision" value="1"/>
+            </Sets>
+            <Sets Character="o">
+                <Positive index="GroundNoSpawn" value="1"/>
+                <Positive index="NoBuild" value="1"/>
+                <Positive index="ShrubVision" value="1"/>
+            </Sets>
+            <Sets Character="f">
+                <Positive index="ShrubVision" value="1"/>
+            </Sets>
+            <Rows value="f"/>
+        </Layers>
+        <EditorCategories value="FootprintGroup:SpecificOthers"/>
+    </CFootprint>
+    <CFootprint id="Footprint3x3ForceField2">
+        <Layers index="Check">
+            <Rows value=".."/>
+            <Rows value=".."/>
+        </Layers>
+        <Layers index="Place">
+            <Sets Character="o">
+                <Positive index="NoBuild" value="1"/>
+            </Sets>
+            <Rows value="oo"/>
+            <Rows value="oo"/>
+        </Layers>
+        <Shape>
+            <Radius value="1.4143"/>
+            <Offsets value="-1,-1;1,-1;-1,1;1,1"/>
+            <Borders value="0,2,2;1,0,2;2,3,2;3,1,2"/>
+        </Shape>
+    </CFootprint>
+</Catalog>

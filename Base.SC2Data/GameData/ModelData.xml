@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CModel id="FrostArchonBasicAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ArchonBeam\ArchonBeam.m3"/>
+        <LowQualityModel value="ArchonAttackBeamLow"/>
+        <EditorCategories value="Race:Protoss"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="Flametail" parent="Building" Race="Zerg">
+        <Model value="Assets\Units\Zerg\AshWorm\AshWorm.m3"/>
+        <Events>
+            <Anim value="Burrow,00"/>
+            <Name value="Burrow"/>
+            <Type value="Sound"/>
+            <Time value="0.920000"/>
+            <Payload value="AshWorm_Burrow"/>
+        </Events>
+        <Events>
+            <Anim value="Burrow,00"/>
+            <Name value="Vox Burrow"/>
+            <Type value="Sound"/>
+            <Time value="1.410000"/>
+            <Payload value="AshWorm_Vox"/>
+        </Events>
+        <Events>
+            <Anim value="Unburrow,00"/>
+            <Name value="UnBurrow"/>
+            <Type value="Sound"/>
+            <Time value="0.120000"/>
+            <Payload value="AshWorm_UnBurrow"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,01"/>
+            <Name value="Attack"/>
+            <Type value="Sound"/>
+            <Time value="0.450000"/>
+            <Payload value="AshWorm_Attack"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,01"/>
+            <Name value="Inhale Vox"/>
+            <Type value="Sound"/>
+            <Time value="0.140000"/>
+            <Payload value="AshWorm_Roar"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="Death00"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="AshWorm_Death"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="AshWorm_BodyFall"/>
+            <Type value="Sound"/>
+            <Time value="1.430000"/>
+            <Payload value="AshWorm_BodyFall"/>
+        </Events>
+        <PlanetPanelCamera value="Star2CameraHigher19"/>
+        <Radius value="1.200000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraHigher19"/>
+        <UnitGlossaryCamera value="Star2CameraHigher19"/>
+    </CModel>
+    <CModel id="BengaraGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="BombWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PhotonMissile\PhotonMissile.m3"/>
+    </CModel>
+    <CModel id="DireMitoscarabDeath" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\KraithEvoDeath\KraithEvoDeath.m3"/>
+        <LowQualityModel value="ZergLargeUnitDeathLow"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.300000,0.300000,0.300000"/>
+        <ScaleMin value="0.300000,0.300000,0.300000"/>
+        <TextureDeclares Prefix="Kraith_">
+            <Adaptions TriggerOnSubstring="Diff" Slot="main.diffuse"/>
+            <Adaptions TriggerOnSubstring="emis" Slot="main.emissive"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="FrostArchonGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="3.500000,3.500000,3.500000"/>
+        <ScaleMin value="3.500000,3.500000,3.500000"/>
+    </CModel>
+    <CModel id="HookedTonguesLongSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.800000,1.000000"/>
+        <ScaleMin value="1.000000,0.800000,1.000000"/>
+    </CModel>
+    <CModel id="HookedTonguesLongSplat2" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.800000,1.000000"/>
+        <ScaleMin value="1.000000,0.800000,1.000000"/>
+    </CModel>
+    <CModel id="HookedTonguesSplat2" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.650000,1.000000"/>
+        <ScaleMin value="1.000000,0.650000,1.000000"/>
+    </CModel>
+    <CModel id="RepeaterLanceSplat2" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.850000,1.000000"/>
+        <ScaleMin value="1.000000,0.850000,1.000000"/>
+    </CModel>
+    <CModel id="RepeaterLanceWeapon2" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\MothershipPurifyMissile\MothershipPurifyMissile.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+    <CModel id="ScreamerSightSplat2" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.100000,1.000000"/>
+        <ScaleMin value="1.000000,1.100000,1.000000"/>
+    </CModel>
+    <CModel id="SeekerBeamTargeting3" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.710000,1.000000"/>
+        <ScaleMin value="1.000000,0.710000,1.000000"/>
+    </CModel>
+    <CModel id="SnipeSplat2" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="TheTorrasqueSELECTPREVIEW" parent="Unit" Race="Zerg">
+        <Model value="Assets\Units\Zerg\UltraliskEx1B\UltraliskEx1B.m3"/>
+        <RequiredAnims value="Assets\Units\Zerg\UltraliskEx1_RequiredAnims\UltraliskEx1_RequiredAnims.m3a"/>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.160000"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,01"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.040000"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,01"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.160000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,A"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.020000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,A"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.190000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,00"/>
+            <Name value="UltraliskHeadAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.550000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,00"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.350000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,00"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.490000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,01"/>
+            <Name value="UltraliskHeadAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.450000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,01"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.400000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,01"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.490000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,D"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.020000"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,D"/>
+            <Name value="UltraliskAttack"/>
+            <Type value="Sound"/>
+            <Time value="0.190000"/>
+        </Events>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigh13"/>
+        <Radius value="1.250000"/>
+        <ScaleMax value="0.070000,0.070000,0.070000"/>
+        <ScaleMin value="0.070000,0.070000,0.070000"/>
+        <SelectionRadius value="1.176200"/>
+        <ShadowRadius value="1.176200"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraHigh13"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="1.000000"/>
+        <TipabilityWidth value="1.000000"/>
+        <UnitGlossaryCamera value="Star2CameraHigh13"/>
+    </CModel>
+    <CModel id="PsionicStormModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\PsiStorm\PsiStorm.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="LaserSightSplatSkillshotModelchangemyscaleforlinelength2" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.270000,1.000000"/>
+        <ScaleMin value="1.000000,1.270000,1.000000"/>
+    </CModel>
+    <CModel id="HookedTonguesSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.650000,1.000000"/>
+        <ScaleMin value="1.000000,0.650000,1.000000"/>
+    </CModel>
+    <CModel id="MitoscarabDeath" parent="UnitDeath" Race="Zerg">
+        <Model value="Assets\Units\Zerg\KraithEvoDeath\KraithEvoDeath.m3"/>
+        <LowQualityModel value="ZergLargeUnitDeathLow"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+        <TextureDeclares Prefix="Kraith_">
+            <Adaptions TriggerOnSubstring="Diff" Slot="main.diffuse"/>
+            <Adaptions TriggerOnSubstring="emis" Slot="main.emissive"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="ThrowBanelingLaunch2" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Zerg\FungalGrowthMissileImpact\FungalGrowthMissileImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="ThrowBanelingLineModel2" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.025000,1.000000"/>
+        <ScaleMin value="1.000000,1.025000,1.000000"/>
+    </CModel>
+    <CModel id="ThrowBanelingMissileModel2" parent="Unit" Race="Zerg">
+        <Model value="Assets\Units\Zerg\Baneling\Baneling.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid04"/>
+        <Radius value="0.400000"/>
+        <ScaleMax value="0.880000,0.880000,0.880000"/>
+        <ScaleMin value="0.720000,0.720000,0.720000"/>
+        <SelectionRadius value="0.468700"/>
+        <ShadowRadius value="0.468700"/>
+        <TechPurchaseCamera value="Star2CameraMid04"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.600000"/>
+        <TipabilityWidth value="0.600000"/>
+        <UnitGlossaryCamera value="Star2CameraMid04"/>
+    </CModel>
+    <CModel id="TurboFireTrail2" parent="Doodad">
+        <Model value="Assets\Doodads\FireMedium\FireMedium.m3"/>
+        <ScaleMax value="1.300000,1.300000,1.300000"/>
+        <ScaleMin value="1.300000,1.300000,1.300000"/>
+    </CModel>
+    <CModel id="WildfireSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.500000,1.000000"/>
+        <ScaleMin value="1.000000,0.500000,1.000000"/>
+    </CModel>
+    <CModel id="LungeSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.575000,1.000000"/>
+        <ScaleMin value="1.000000,0.575000,1.000000"/>
+    </CModel>
+    <CModel id="RepeaterLanceWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\MothershipPurifyMissile\MothershipPurifyMissile.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+    <CModel id="RepeaterLanceSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.850000,1.000000"/>
+        <ScaleMin value="1.000000,0.850000,1.000000"/>
+    </CModel>
+    <CModel id="PeterGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="1.700000,1.700000,1.700000"/>
+        <ScaleMin value="1.700000,1.700000,1.700000"/>
+    </CModel>
+    <CModel id="DartSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.400000,1.000000"/>
+        <ScaleMin value="1.000000,0.400000,1.000000"/>
+    </CModel>
+    <CModel id="TractorBeamImpact" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\PhaseCannonMissileImpact\PhaseCannonMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="TractorBeamWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PhaseCannonMissile\PhaseCannonMissile.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="TractorBeamSightModel" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.050000,1.000000"/>
+        <ScaleMin value="1.000000,1.050000,1.000000"/>
+    </CModel>
+    <CModel id="WikliffHeroGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="BrookeGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+    </CModel>
+    <CModel id="SnipeSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="TimeWarp2" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\TimeWarpImpact\TimeWarpImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="TimeWarpLaunch2" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\TimeWarpLaunch\TimeWarpLaunch.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="TurboFireTrail" parent="Doodad">
+        <Model value="Assets\Doodads\FireMedium\FireMedium.m3"/>
+        <ScaleMax value="1.300000,1.300000,1.300000"/>
+        <ScaleMin value="1.300000,1.300000,1.300000"/>
+    </CModel>
+    <CModel id="OilPuddleWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\SporeCannonMissile\SporeCannonMissile.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CModel>
+    <CModel id="OilPuddleFire" parent="Doodad">
+        <Model value="Assets\Effects\Terran\TerranBuildingFireSmall\TerranBuildingFireSmall.m3"/>
+        <ScaleMax value="6.000000,6.000000,1.200000"/>
+        <ScaleMin value="6.000000,6.000000,1.200000"/>
+    </CModel>
+    <CModel id="FirebombSightSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.270000,1.000000"/>
+        <ScaleMin value="1.000000,1.270000,1.000000"/>
+    </CModel>
+    <CModel id="BlueFlameAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\HellionUpgradeBeam\HellionUpgradeBeam.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="NilesGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="2.500000,2.500000,2.500000"/>
+        <ScaleMin value="2.500000,2.500000,2.500000"/>
+    </CModel>
+    <CModel id="OilPuddleSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.950000,1.000000"/>
+        <ScaleMin value="1.000000,0.950000,1.000000"/>
+    </CModel>
+    <CModel id="MercHellion2" parent="Unit" Race="Terran">
+        <Model value="Assets\Units\Terran\HellionMercenary\HellionMercenary.m3"/>
+        <AttachProps Id="Ref_TurretZ">
+            <Keys index="Turret" value="0"/>
+        </AttachProps>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid06"/>
+        <Radius value="0.650000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SelectionRadius value="0.866400"/>
+        <ShadowRadius value="0.866400"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="TechPurchaseVehicle"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.600000"/>
+        <TipabilityWidth value="0.400000"/>
+        <UnitGlossaryCamera value="Star2CameraMid06"/>
+    </CModel>
+    <CModel id="MercHellionDeath2" parent="UnitDeath">
+        <Model value="Assets\Units\Terran\HellionMercenaryDeath\HellionMercenaryDeath.m3"/>
+        <LowQualityModel value="TerranSmallUnitDeathLow"/>
+        <EditorCategories value="Race:Terran"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="RacerBasicAttackDamageReaction" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\HellionBeamImpact\HellionBeamImpact.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="RacerBasicAttackBlueReaction" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\HellionBeamUpgradeImpact\HellionBeamUpgradeImpact.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="RacerBasicAttackBlueReactionStructures" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\HellionBeamBuildingUpgradeImpact\HellionBeamBuildingUpgradeImpact.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="HerodiasGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="JammerShock" parent="Doodad">
+        <Model value="Assets\Effects\Terran\Electrocute\Electrocute.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="1.300000,1.300000,1.300000"/>
+        <ScaleMin value="1.300000,1.300000,1.300000"/>
+    </CModel>
+    <CModel id="ElectricRazorSkillshotLine" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.850000,1.000000"/>
+        <ScaleMin value="1.000000,0.850000,1.000000"/>
+    </CModel>
+    <CModel id="ElectricRazor" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\MutaliskMissile\MutaliskMissile.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="RacerBasicAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\HellionBeam\HellionBeam.m3"/>
+        <LowQualityModel value="HellionAttackBeamLow"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="SiegeTankSiegedAttackDamage2" parent="ImpactFX">
+        <Model value="Assets\Effects\Terran\FireImpact\FireImpact.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="ThrowBanelingChannelCloud" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\SmokeAOE\SmokeAOE.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+        <SelectionRadius value="1.428400"/>
+        <ShadowRadius value="1.428400"/>
+    </CModel>
+    <CModel id="ThrowBanelingLaunch" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Zerg\FungalGrowthMissileImpact\FungalGrowthMissileImpact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="ThrowBanelingMissileModel" parent="Unit" Race="Zerg">
+        <Model value="Assets\Units\Zerg\Baneling\Baneling.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid04"/>
+        <Radius value="0.400000"/>
+        <ScaleMax value="0.880000,0.880000,0.880000"/>
+        <ScaleMin value="0.720000,0.720000,0.720000"/>
+        <SelectionRadius value="0.468700"/>
+        <ShadowRadius value="0.468700"/>
+        <TechPurchaseCamera value="Star2CameraMid04"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.600000"/>
+        <TipabilityWidth value="0.600000"/>
+        <UnitGlossaryCamera value="Star2CameraMid04"/>
+    </CModel>
+    <CModel id="FenixGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="DamaskGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="FirefistGroundExplosion" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\TerranSmallUnitDeath\TerranSmallUnitDeath.m3"/>
+        <LowQualityModel value="SpiderMineExplosionLow"/>
+        <EditorCategories value="Race:Terran"/>
+        <Occlusion value="Show"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+    </CModel>
+    <CModel id="ThrowBanelingLineModel" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.025000,1.000000"/>
+        <ScaleMin value="1.000000,1.025000,1.000000"/>
+    </CModel>
+    <CModel id="TakeoffGuide" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.800000,1.000000"/>
+        <ScaleMin value="1.000000,0.800000,1.000000"/>
+    </CModel>
+    <CModel id="ScreamerSightSplat" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.100000,1.000000"/>
+        <ScaleMin value="1.000000,1.100000,1.000000"/>
+    </CModel>
+    <CModel id="RocketeerGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="TakeoffFire" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\FirebatHitSprite\FirebatHitSprite.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="StalkerMinion" parent="Unit" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Stalker\Stalker.m3"/>
+        <RequiredAnims value="Assets\Units\Protoss\Stalker_SwarmAnims\Stalker_SwarmAnims.m3a"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraHigh10"/>
+        <Radius value="0.850000"/>
+        <ScaleMax value="0.690000,0.690000,0.690000"/>
+        <ScaleMin value="0.690000,0.690000,0.690000"/>
+        <SelectionRadius value="1.087000"/>
+        <ShadowRadius value="1.087000"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="Star2CameraHigh10"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.800000"/>
+        <TipabilityWidth value="0.800000"/>
+        <UnitGlossaryCamera value="Star2CameraHigh10"/>
+    </CModel>
+    <CModel id="TheTorrasqueGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="3.500000,3.500000,3.500000"/>
+        <ScaleMin value="3.500000,3.500000,3.500000"/>
+    </CModel>
+    <CModel id="SeekerBeamTargeting2" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.710000,1.000000"/>
+        <ScaleMin value="1.000000,0.710000,1.000000"/>
+    </CModel>
+    <CModel id="SilasGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="LaserSightSplatSkillshotModelchangemyscaleforlinelength" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.270000,1.000000"/>
+        <ScaleMin value="1.000000,1.270000,1.000000"/>
+    </CModel>
+    <CModel id="SeekerBeamTargeting" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.710000,1.000000"/>
+        <ScaleMin value="1.000000,0.710000,1.000000"/>
+    </CModel>
+    <CModel id="AnaniasGlow" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\SwarmHeroGlow\SwarmHeroGlow.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="BileBlastMissileModel" parent="Unit" Race="Zerg">
+        <Model value="Assets\Effects\Zerg\PrimalGuardianMissile\PrimalGuardianMissile.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid04"/>
+        <Radius value="0.400000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+        <SelectionRadius value="0.468700"/>
+        <ShadowRadius value="0.468700"/>
+        <TechPurchaseCamera value="Star2CameraMid04"/>
+        <Tipability value="0.750000"/>
+        <TipabilityLength value="0.600000"/>
+        <TipabilityWidth value="0.600000"/>
+        <UnitGlossaryCamera value="Star2CameraMid04"/>
+    </CModel>
+    <CModel id="TorpedoTargeting" parent="Splat">
+        <Model value="Assets\Effects\Terran\LaserSightSplat\LaserSightSplat.m3"/>
+        <AnimSpeed value="10.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,0.900000,1.000000"/>
+        <ScaleMin value="1.000000,0.900000,1.000000"/>
+    </CModel>
+    <CModel id="SpiderMine2" parent="Unit" Race="Terran">
+        <Model value="Assets\Units\Terran\SpiderMine\SpiderMine.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow02"/>
+        <Radius value="0.250000"/>
+        <SelectionLayer value="3"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.250000"/>
+        <TechPurchaseCamera value="Star2CameraLow02"/>
+        <UnitGlossaryCamera value="Star2CameraLow02"/>
+    </CModel>
+    <CModel id="SpiderMineExplosion2" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\TerranSmallUnitDeath\TerranSmallUnitDeath.m3"/>
+        <LowQualityModel value="SpiderMineExplosionLow"/>
+        <EditorCategories value="Race:Terran"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="2.000000"/>
+    </CModel>
+    <CModel id="SpiderMinePlacement2" parent="Placement" Race="Terran">
+        <Model value="Assets\Effects\Terran\SpiderMinePlacement\SpiderMinePlacement.m3"/>
+        <LowQualityModel value="SpiderMine"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.250000"/>
+    </CModel>
+    <CModel id="Spy" parent="Unit" Race="Protoss">
+        <Model value="Assets\Units\Protoss\DarkTemplar\DarkTemplar_01.m3"/>
+        <RequiredAnims value="Assets\Units\Protoss\DarkTemplar_00_SwarmAnims\DarkTemplar_00_SwarmAnims.m3a"/>
+        <RequiredAnims value="Assets\Units\Protoss\DarkTemplar_01_SwarmAnims\DarkTemplar_01_SwarmAnims.m3a"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <Radius value="0.400000"/>
+        <ScaleMax value="0.850000,0.850000,0.850000"/>
+        <ScaleMin value="0.850000,0.850000,0.850000"/>
+        <ShadowRadius value="0.375000"/>
+        <SquibTypeDefault value="LightArmor"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+    </CModel>
+    <CModel id="TurretWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PhaseCannonMissile\PhaseCannonMissile.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="RevengeWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\YagdraFireBallMissile\YagdraFireBallMissile.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="UnderfootShieldOff" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\PhasePrismUnload\PhasePrismUnload.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <SelectionRadius value="0.200000"/>
+        <ShadowRadius value="0.200000"/>
+    </CModel>
+    <CModel id="ZealotMinionDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Units\Protoss\ZealotDeath\ZealotDeath.m3"/>
+        <LowQualityModel value="ProtossSpiritDeathLow"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+        <SelectionRadius value="0.555400"/>
+        <ShadowRadius value="0.555400"/>
+    </CModel>
+</Catalog>

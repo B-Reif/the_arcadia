@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CUpgrade id="MinionUpgrade">
+        <Icon value="Assets\Textures\btn-unit-protoss-zealot.dds"/>
+        <EffectArray Reference="Unit,ZealotMinion,LifeMax" Value="13"/>
+        <EffectArray Reference="Unit,ZealotMinion,LifeStart" Value="13"/>
+        <EffectArray Reference="Unit,StalkerMinion,LifeMax" Value="10"/>
+        <EffectArray Reference="Unit,StalkerMinion,LifeStart" Value="10"/>
+        <EffectArray Reference="Effect,StalkerMinionBasicAttack,Amount" Value="2"/>
+        <EffectArray Reference="Effect,ZealotMinionBasicAttack,Amount" Value="1"/>
+        <EffectArray Reference="Effect,ImmortalMinionBasicAttack,Amount" Value="3"/>
+        <EffectArray Reference="Unit,ImmortalMinion,LifeMax" Value="20"/>
+        <EffectArray Reference="Unit,ImmortalMinion,LifeStart" Value="20"/>
+        <EffectArray Reference="Unit,ZealotMinion,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,StalkerMinion,LifeArmor" Value="1.25"/>
+        <EffectArray Reference="Unit,ImmortalMinion,LifeArmor" Value="3"/>
+        <AffectedUnitArray value="StalkerMinion"/>
+        <AffectedUnitArray value="ZealotMinion"/>
+        <AffectedUnitArray value="ImmortalMinion"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MonsterUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-posthumousmitosis.dds"/>
+        <EffectArray Reference="Unit,Quillgor,LifeMax" Value="20"/>
+        <EffectArray Reference="Unit,Quillgor,LifeStart" Value="20"/>
+        <EffectArray Reference="Unit,DireQuillgor,LifeMax" Value="31"/>
+        <EffectArray Reference="Unit,DireQuillgor,LifeStart" Value="31"/>
+        <EffectArray Reference="Effect,QuillgorDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,DireQuillgorDamage,Amount" Value="1"/>
+        <EffectArray Reference="Unit,Mitoscarab,LifeStart" Value="18"/>
+        <EffectArray Reference="Unit,Mitoscarab,LifeMax" Value="18"/>
+        <EffectArray Reference="Unit,DireMitoscarab,LifeMax" Value="39"/>
+        <EffectArray Reference="Unit,DireMitoscarab,LifeStart" Value="39"/>
+        <EffectArray Reference="Effect,MitoscarabDamage,Amount" Value="1"/>
+        <EffectArray Reference="Effect,DireMitoscarabDamage,Amount" Value="1"/>
+        <EffectArray Reference="Unit,Ursadon,LifeMax" Value="30"/>
+        <EffectArray Reference="Unit,Ursadon,LifeStart" Value="30"/>
+        <EffectArray Reference="Unit,DireUrsadon,LifeMax" Value="49"/>
+        <EffectArray Reference="Unit,DireUrsadon,LifeStart" Value="49"/>
+        <EffectArray Reference="Effect,UrsadonBasicAttackDamage,Amount" Value="2"/>
+        <EffectArray Reference="Effect,DireUrsadonBasicAttackDamage,Amount" Value="2"/>
+        <EffectArray Reference="Unit,Terrorzor2,LifeMax" Value="100"/>
+        <EffectArray Reference="Unit,Terrorzor2,LifeStart" Value="100"/>
+        <EffectArray Reference="Effect,TyrannozorDamage,Amount" Value="4"/>
+        <AffectedUnitArray value="DireMitoscarab"/>
+        <AffectedUnitArray value="DireQuillgor"/>
+        <AffectedUnitArray value="DireUrsadon"/>
+        <AffectedUnitArray value="Terrorzor2"/>
+        <AffectedUnitArray value="Mitoscarab"/>
+        <AffectedUnitArray value="Quillgor"/>
+        <AffectedUnitArray value="Ursadon"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="WPEffects">
+        <EffectArray Reference="Effect,RepeaterLanceDamageOutbound,Amount" Value="10"/>
+        <EffectArray Reference="Abil,RepeaterLance,Cost[0].Cooldown.TimeUse" Value="1.500000"/>
+        <EffectArray Reference="Effect,RepeaterLanceDamageInbound,Amount" Value="10"/>
+        <EffectArray Reference="Effect,PsionicStormInitialDamageInitial,Amount" Value="6"/>
+        <EffectArray Reference="Effect,PsionicStormDamage,Amount" Value="0.75"/>
+        <EffectArray Operation="Subtract" Reference="Effect,PsionicStormInitialDamageInitial,AreaArray[0].Radius" Value="0.125"/>
+        <EffectArray Operation="Subtract" Reference="Effect,PsionicStormInitialWPSearch,AreaArray[0].Radius" Value="0.125"/>
+        <EffectArray Operation="Subtract" Reference="Effect,PsionicStormDamageSearch,AreaArray[0].Radius" Value="0.125"/>
+        <EffectArray Operation="Subtract" Reference="Effect,PsionicStormInitialSlowSearch,AreaArray[0].Radius" Value="0.125"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,PsionicStormSlow,Modification.MoveSpeedMultiplier" Value="0.03"/>
+        <MaxLevel value="10"/>
+    </CUpgrade>
+</Catalog>

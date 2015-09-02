@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirement id="CanCloak">
+        <NodeArray index="Use" Link="Not3374928935OrCountBehaviorInvisibilityCompleteOnlyAtUnitCountBehaviorInvisibilityFadeInCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnitCountBehaviorCloakFadeInCoverCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="OrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CanDecloak">
+        <NodeArray index="Show" Link="AndOrCountBehaviorInvisibilityCompleteOnlyAtUnitCountBehaviorInvisibilityFadeInCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionDamageCompleteOnlyAtUnitCountBehaviorInvisibilitySuppressionProximityCompleteOnlyAtUnitCountBehaviorCloakFadeInCoverCompleteOnlyAtUnitOrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CastBurrow2">
+        <NodeArray index="Use" Link="AndNotCountBehaviorBurrow2CompleteOnlyAtUnitNotCountBehaviorBurrowDelay2CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndNotCountBehaviorBurrow2CompleteOnlyAtUnitNotCountBehaviorBurrowDelay2CompleteOnlyAtUnitCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CastElectricRazor">
+        <NodeArray index="Use" Link="AndNotCountBehaviorBurrowCompleteOnlyAtUnitNotCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CastLongshock">
+        <NodeArray index="Use" Link="AndNotCountBehaviorLongshockCompleteOnlyAtUnitNotCountBehaviorBurrowCompleteOnlyAtUnitNotCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CastPurge">
+        <NodeArray index="Use" Link="AndNotCountBehaviorBurrowCompleteOnlyAtUnitNotCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CastTunnel2">
+        <NodeArray index="Use" Link="CountBehaviorBurrow2CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorDisguiseReplicaCompleteOnlyAtUnitOrCountBehaviorBurrow2CompleteOnlyAtUnitCountBehaviorBurrowDelay2CompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CasterIsInTakeoff">
+        <NodeArray index="Use" Link="CountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CasterIsInTakeoffAndHeight2">
+        <NodeArray index="Use" Link="AndCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit1731956433GT1366662853CountBehaviorTakeoffHeightStacksCompleteOnlyAtUnit2"/>
+        <NodeArray index="Show" Link="AndCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CasterIsNotInTakeoff">
+        <NodeArray index="Use" Link="NotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndNotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CastTunnel">
+        <NodeArray index="Use" Link="CountBehaviorBurrowCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitOrCountBehaviorBurrowCompleteOnlyAtUnitCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CastBurrow">
+        <NodeArray index="Use" Link="AndNotCountBehaviorBurrowCompleteOnlyAtUnitNotCountBehaviorBurrowDelayCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndNotCountBehaviorBurrowCompleteOnlyAtUnitNotCountBehaviorBurrowDelayCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CancelPersonalWarp">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountBehaviorPersonalWarpRunningCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorPersonalWarpRunningCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NotDisguiseReplica3">
+        <NodeArray index="Use" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="RepeaterLanceRequirements2">
+        <NodeArray index="Use" Link="NotCountUnitRepeaterLanceWeaponCompleteOnly397479403"/>
+        <NodeArray index="Show" Link="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseSnapperCopy">
+        <NodeArray index="Use" Link="NotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndNotCountBehaviorTakeoffControllerBehaviorCompleteOnlyAtUnitCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="HasPylon">
+        <NodeArray index="Use" Link="CountUnitPylon2CompleteOnly3309290432"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="HavePersonalWarpRunning2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NoFrostbiteAttack">
+        <NodeArray index="Use" Link="NotCountBehaviorFrostbiteAttackCompleteOnlyAtUnit1660618275"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NoPrecursor">
+        <NodeArray index="Use" Link="NotCountBehaviorPrecursorCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NotDisguiseReplica2">
+        <NodeArray index="Use" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseHookedTongueBasic">
+        <NodeArray index="Show" Link="AndNotCountBehaviorHookedTongueRecastCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseHookedTongueBasic2">
+        <NodeArray index="Show" Link="AndNotCountBehaviorHookedTongueRecast2CompleteOnlyAtUnitCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseHookedTongueLong">
+        <NodeArray index="Show" Link="AndCountBehaviorHookedTongueRecastCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseHookedTongueLong2">
+        <NodeArray index="Show" Link="AndCountBehaviorHookedTongueRecast2CompleteOnlyAtUnitCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseNutritiveVomit">
+        <NodeArray index="Show" Link="AndNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UsePersonalWarp">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="NotCountBehaviorPersonalWarpRunningCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndNotCountBehaviorPersonalWarpRunningCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NoPersonalWarpRunning2">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="NotCountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorPersonalWarpRunning2CompleteOnlyAtUnit"/>
+    </CRequirement>
+    <!--No existing projectile out, + not disguise-->
+    <CRequirement id="NotDisguiseReplica">
+        <NodeArray index="Use" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="IsDisguiseReplica">
+        <NodeArray index="Use" Link="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="RepeaterLanceRequirements">
+        <NodeArray index="Use" Link="NotCountUnitRepeaterLanceWeaponCompleteOnly397479403"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseCalledShot">
+        <NodeArray index="Use" Link="NotCountBehaviorCalledShotAttackBehaviorCompleteOnlyAtUnit358711164"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseBlueFlame">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="NotCountBehaviorBlueFlameCompleteOnlyAtUnit2029541140"/>
+        <NodeArray index="Show" Link="NotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseFluxclaws">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="NotCountBehaviorFluxclawsCompleteOnlyAtUnit3423511315"/>
+        <NodeArray index="Show" Link="AndNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseRetrieveRadarMines">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="AndOrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnitOrGTCountUnitRadarMineCompleteOnly0GTCountUnitRadarMineBurrowedCompleteOnly0"/>
+    </CRequirement>
+    <CRequirement id="HaveAmbushBehavior">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="CountBehaviorAmbushCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="LightAspectAbilities">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountBehaviorLightAspectCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorLightAspectCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="DarkAspectAbilities">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="AndCountBehaviorDarkAspectCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorDarkAspectCompleteOnlyAtUnitNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="HaveNoAmbushBehavior">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountBehaviorAmbushCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseMaim">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="NotCountBehaviorMaimCompleteOnlyAtUnit588042383"/>
+        <NodeArray index="Show" Link="OrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseSpyAbilities">
+        <NodeArray index="Use" Link="OrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="OrCountBehaviorDisguiseReplicaCompleteOnlyAtUnitCountBehaviorSpyValidatorBehaviorCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseSymbiosis">
+        <NodeArray index="Show" Link="AndNotCountBehaviorDisguiseReplicaCompleteOnlyAtUnitNotCountBehaviorSymbiosisCasterCompleteOnlyAtUnit"/>
+    </CRequirement>
+</Catalog>
